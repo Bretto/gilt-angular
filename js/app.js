@@ -6,7 +6,8 @@ angular.module('GiltApp', ['GiltApp.filters', 'GiltApp.services', 'GiltApp.direc
     config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
         when('/', {templateUrl:'partial/hero.html'}).
-        when('/:type', {controller:'ProductCtrl', templateUrl:'partial/products.html'}).
+        when('/:type', {controller:'ProductsCtrl', templateUrl:'partial/products.html'}).
+        when('/product/:uri', {controller:'ProductCtrl', templateUrl:'partial/product.html'}).
         otherwise({redirectTo:'/'});
     $locationProvider.html5Mode(false);
 }]);

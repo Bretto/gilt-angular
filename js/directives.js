@@ -236,3 +236,31 @@ directives.directive('productDetail', function ($log, $parse, $timeout) {
         link:link
     }
 });
+
+directives.directive('itemPreview', function ($log, $parse, $http, GILT) {
+
+    function link(scope, elem, attr, ctrl) {
+
+        var productUrl = scope.item + GILT.APIKEY + GILT.CALLBACK;
+
+        $http({method:GILT.METHOD, url:productUrl}).success(success).error(error);
+
+        function success(data, status) {
+            scope.status = status;
+            scope.data = data;
+            $log.info(data);
+        }
+
+        function error(data, status) {
+            scope.data = data || "Request failed";
+            scope.status = status;
+        }
+    }
+
+    return {
+        replace:true,
+        restrict:'E',
+        templateUrl:'partial/item-preview.html',
+        link:link
+    }
+});

@@ -12,9 +12,8 @@
     </div>
     <div class="product-detail-bg">
         <p>{{s.description}}.</p>
-
         <div>
-            <a class="btn btn-inverse" href="{{s.sale}}?apikey=88658e0b728c695d6145ffde625f01f6">Buy {{s.name}}</a>
+            <a class="btn btn-inverse" href="#/product/{{s.sale | cleanURL}}">Buy {{s.name}}</a>
         </div>
     </div>
 </div>

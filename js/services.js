@@ -22,19 +22,5 @@ services.factory('MainModel', function ($http, $log, $rootScope, $routeParams, $
     return MainModel;
 });
 
-services.factory('GiltService', function ($http, $log, $rootScope, $routeParams, $location, GILT) {
-
-    var giltService = {
-
-        fetchStore:function (store, saleMethod) {
-            var store = store;
-            var saleMethod = saleMethod;
-            var saleUrl = GILT.SALE + store + saleMethod + GILT.APIKEY + GILT.CALLBACK;
-            return $http({method:GILT.METHOD, url:saleUrl});
-        }
-    }
-
-    return giltService;
-});
 
 
