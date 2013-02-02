@@ -44,17 +44,9 @@ directives.directive('mainContent', function ($log, $parse) {
     }
 });
 
-directives.directive('productPreview', function ($log, $parse) {
+directives.directive('productPreview', function ($log, $parse, $timeout) {
 
     function link(scope, element, attr, ctrl) {
-
-        // Register the event listeners.
-        element.bind( 'mouseenter', function() {
-            scope.isOpen = true;
-        });
-        element.bind( 'mouseleave', function() {
-            scope.isOpen = false;
-        });
     }
 
     return {
@@ -65,7 +57,7 @@ directives.directive('productPreview', function ($log, $parse) {
     }
 });
 
-directives.directive('productDetail', function ($log, $parse) {
+directives.directive('productDetail', function ($log, $parse, $timeout) {
 
     function link(scope, element, attr, ctrl) {
 
@@ -221,12 +213,19 @@ directives.directive('productDetail', function ($log, $parse) {
 
         }
 
-        // Register the event listeners.
+
+        var timeoutId;
+
         element.parent().bind( 'mouseenter', function() {
-            scope.$apply( show );
+            timeoutId = $timeout(function() {
+                scope.$apply( show );
+            }, 1000);
+
+
         });
         element.parent().bind( 'mouseleave', function() {
             scope.$apply( hide );
+            $timeout.cancel(timeoutId);
         });
     }
 

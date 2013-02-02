@@ -37,12 +37,17 @@ body {
   height: 184px;
   overflow: hidden;
 }
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
+.product-preview-bg:hover legend {
+  display: block;
+}
+/* line 46, ../sass/screen.scss */
 .product-preview-bg legend {
+  display: none;
   bottom: 40px;
   position: relative;
 }
-/* line 43, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .product-preview-bg legend h5 {
   position: absolute;
   top: 0;
@@ -56,28 +61,28 @@ body {
   margin-left: 10px;
   padding-right: 20px;
 }
-/* line 58, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .product-preview-bg legend .product-preview-gradient {
   width: 100%;
   height: 40px;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .product-detail {
   position: absolute;
   width: 370px;
 }
-/* line 71, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .product-detail .well {
   margin-bottom: 0;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .progress-wrapper {
   padding: 30%;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .arrow-right {
   position: absolute;
   width: 0;
@@ -87,7 +92,7 @@ body {
   border-left: 20px solid red;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .arrow-left {
   position: absolute;
   width: 0;
