@@ -1,0 +1,17 @@
+<li>
+    <div class="product-preview-bg">
+        <a href="{{s.sale}}?apikey=88658e0b728c695d6145ffde625f01f6" class="thumbnail" >
+            <img src="{{s.image_urls.300x184[0].url}}" alt="" width="300px" height="184px"/>
+        </a>
+        <legend ng-show="isOpen">
+            <img src="assets/img/gradient.png" class="product-preview-gradient">
+            <h5>{{s.name}}</h5>
+        </legend>
+        <!--<div class="progress-wrapper">-->
+            <!--<div class="progress progress-striped active">-->
+                <!--<div class="bar" style="width: 100%"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <product-detail ng-show="isOpen" class="product-detail"></product-detail>
+</li>

@@ -1,0 +1,130 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//@import "compass/reset";
+
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  padding-top: 40px;
+}
+
+.thumbnails{
+  margin-left: 0px;
+}
+
+.thumbnails > li {
+  margin: 0;
+  float: left;
+}
+
+.thumbnail{
+  border: none;
+  padding: 0;
+}
+
+.product-preview-bg{
+  width: 300px;
+  height: 184px;
+  overflow: hidden;
+
+
+  legend{
+
+    bottom: 40px;
+    position: relative;
+
+    h5{
+      position: absolute;
+      top: 0;
+      text-align: center;
+      text-shadow: 0 0 3px rgba(0, 0, 0, .75);
+      color: #ffffff;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      margin-left: 10px;
+      padding-right: 20px;
+
+    }
+
+    .product-preview-gradient{
+      width: 100%;
+      height: 40px;
+    }
+  }
+
+
+}
+
+.product-detail{
+  position: absolute;
+  width: 370px;
+
+  .well{
+    margin-bottom: 0;
+  }
+
+}
+
+.progress-wrapper{
+  padding: 30%;
+}
+
+
+
+
+  //.arrow-up {
+  //  width: 0;
+  //  height: 0;
+  //  border-left: 20px solid transparent;
+  //  border-right: 20px solid transparent;
+  //
+  //  border-bottom: 20px solid black;
+  //}
+  //
+  //.arrow-down {
+  //  width: 0;
+  //  height: 0;
+  //  border-left: 20px solid transparent;
+  //  border-right: 20px solid transparent;
+  //
+  //  border-top: 20px solid black;
+  //}
+
+  .arrow-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+
+    border-left: 20px solid red;
+  }
+
+  .arrow-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+
+    border-right:20px solid red;
+  }
+
+
+
+
+//a.thumbnail:hover {
+//  border-color: #0088cc;
+//  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+//  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+//  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+//}

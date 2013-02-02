@@ -1,0 +1,98 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/screen.scss */
+body {
+  padding-top: 40px;
+}
+
+/* line 18, ../sass/screen.scss */
+.thumbnails {
+  margin-left: 0px;
+}
+
+/* line 22, ../sass/screen.scss */
+.thumbnails > li {
+  margin: 0;
+  float: left;
+}
+
+/* line 27, ../sass/screen.scss */
+.thumbnail {
+  border: none;
+  padding: 0;
+}
+
+/* line 32, ../sass/screen.scss */
+.product-preview-bg {
+  width: 300px;
+  height: 184px;
+  overflow: hidden;
+}
+/* line 38, ../sass/screen.scss */
+.product-preview-bg legend {
+  bottom: 40px;
+  position: relative;
+}
+/* line 43, ../sass/screen.scss */
+.product-preview-bg legend h5 {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 10px;
+  padding-right: 20px;
+}
+/* line 58, ../sass/screen.scss */
+.product-preview-bg legend .product-preview-gradient {
+  width: 100%;
+  height: 40px;
+}
+
+/* line 67, ../sass/screen.scss */
+.product-detail {
+  position: absolute;
+  width: 370px;
+}
+/* line 71, ../sass/screen.scss */
+.product-detail .well {
+  margin-bottom: 0;
+}
+
+/* line 77, ../sass/screen.scss */
+.progress-wrapper {
+  padding: 30%;
+}
+
+/* line 102, ../sass/screen.scss */
+.arrow-right {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid red;
+}
+
+/* line 112, ../sass/screen.scss */
+.arrow-left {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid red;
+}
