@@ -186,9 +186,9 @@ directives.directive('productDetail', function ($log, $parse, $timeout) {
             scope.getArrow = function(){
                 var arrow;
                 if(ttPosition.x === 'left'){
-                    arrow = 'arrow-right';
+                    arrow = (ttPosition.y === 'top')? 'arrow-right-b' : 'arrow-right-w';
                 }else{
-                    arrow = 'arrow-left';
+                    arrow = (ttPosition.y === 'top')? 'arrow-left-b' : 'arrow-left-w';
                 }
                 return arrow;
             }
