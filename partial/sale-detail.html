@@ -1,6 +1,6 @@
-<div class="product-detail">
+<div class="sale-detail">
     <div class="arrow" ng-class="getArrow()"></div>
-    <div class="product-detail-title-bg">
+    <div class="sale-detail-title-bg">
         <h4>
             {{s.name}}
         </h4>
@@ -10,10 +10,10 @@
             <span class="timeago" title="{{s.ends | date:medium}}">{{s.ends | date:medium}}</span>
         </span>
     </div>
-    <div class="product-detail-bg">
+    <div class="sale-detail-bg">
         <p>{{s.description}}.</p>
         <div>
-            <a class="btn btn-inverse" href="#/product/{{s.sale | cleanURL}}">Buy {{s.name}}</a>
+            <a class="btn btn-inverse" href="#/sale/{{saleType}}/product/{{s.sale | cleanURL}}">Buy {{s.name}}</a>
         </div>
     </div>
 </div>

@@ -1,11 +1,11 @@
 <li>
     <div class="product-preview-bg">
-        <a href="#/product/{{s.sale | cleanURL}}" class="thumbnail" >
-            <img src="{{s.image_urls.300x184[0].url}}"/>
+        <a class="thumbnail" href="#/sale/{{MainModel.saleType}}/product/{{MainModel.productURI | cleanURL}}/item/{{ data.product | cleanURL}}">
+            <img src="{{data.image_urls.420x560[0].url}}"/>
         </a>
         <legend>
             <img src="assets/img/gradient.png" class="product-preview-gradient">
-            <h5>{{s.name}}</h5>
+            <h5>{{data.name}}</h5>
         </legend>
         <!--<div class="progress-wrapper">-->
             <!--<div class="progress progress-striped active">-->
@@ -13,6 +13,4 @@
             <!--</div>-->
         <!--</div>-->
     </div>
-    <product-detail ng-show="isOpen"></product-detail>
 </li>
-

@@ -5,7 +5,10 @@ var filters = angular.module('GiltApp.filters', []);
 
 filters.filter('cleanURL', function() {
     return function(input) {
-        var output = input.replace(/https:\/\/api.gilt.com\/v1\/sales\//, '').replace(/\//g, '_');
+
+        if(!input)return;
+
+        var output = input.replace(/https:\/\/api.gilt.com\/v1/, '').replace(/\//g, '_');
         return output;
     }
 });

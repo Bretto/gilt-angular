@@ -1,14 +1,1 @@
-<div>
-    <img src="{{data.image_urls.744x281[0].url}}" alt="" width="744px" height="281px"/>
-    <h1>{{data.name}}</h1>
-    <p>{{data.description}}</p>
-    <span>Begins:
-        <span class="timeago" title="{{data.begins | date:medium}}">{{data.begins | date:medium}}</span>
-        | Ends:
-        <span class="timeago" title="{{data.ends | date:medium}}">{{data.ends | date:medium}}</span>
-    </span>
-</div>
-<h2>Products</h2>
-<ul class="thumbnails">
-    <item-preview ng-repeat="item in data.products | limitTo:10"></item-preview>
-</ul>
+<h1>Product</h1>

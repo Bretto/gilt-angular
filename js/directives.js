@@ -44,20 +44,22 @@ directives.directive('mainContent', function ($log, $parse) {
     }
 });
 
-directives.directive('productPreview', function ($log, $parse, $timeout) {
+directives.directive('salePreview', function ($log, $parse, $timeout) {
 
     function link(scope, element, attr, ctrl) {
+        $log.info('salePreview link');
+
     }
 
     return {
         replace:true,
         restrict:'E',
-        templateUrl:'partial/product-preview.html',
+        templateUrl:'partial/sale-preview.html',
         link:link
     }
 });
 
-directives.directive('productDetail', function ($log, $parse, $timeout) {
+directives.directive('saleDetail', function ($log, $parse, $timeout) {
 
     function link(scope, element, attr, ctrl) {
 
@@ -232,12 +234,12 @@ directives.directive('productDetail', function ($log, $parse, $timeout) {
     return {
         restrict:'E',
         replace: true,
-        templateUrl:'partial/product-detail.html',
+        templateUrl:'partial/sale-detail.html',
         link:link
     }
 });
 
-directives.directive('itemPreview', function ($log, $parse, $http, GILT) {
+directives.directive('productPreview', function ($log, $parse, $http, GILT) {
 
     function link(scope, elem, attr, ctrl) {
 
@@ -260,7 +262,7 @@ directives.directive('itemPreview', function ($log, $parse, $http, GILT) {
     return {
         replace:true,
         restrict:'E',
-        templateUrl:'partial/item-preview.html',
+        templateUrl:'partial/product-preview.html',
         link:link
     }
 });

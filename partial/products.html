@@ -1,11 +1,14 @@
-
+<div>
+    <img src="{{data.image_urls.744x281[0].url}}" alt="" width="744px" height="281px"/>
+    <h1>{{data.name}}</h1>
+    <p>{{data.description}}</p>
+    <span>Begins:
+        <span class="timeago" title="{{data.begins | date:medium}}">{{data.begins | date:medium}}</span>
+        | Ends:
+        <span class="timeago" title="{{data.ends | date:medium}}">{{data.ends | date:medium}}</span>
+    </span>
+</div>
+<h2>Products</h2>
 <ul class="thumbnails">
-    <product-preview ng-repeat="s in data.sales"></product-preview>
-    <!--<h3><a href="{{s.sale}}?apikey=88658e0b728c695d6145ffde625f01f6">{{s.name}}</a></h3>-->
-    <!--<p>{{s.description}}.</p>-->
-    <!--<p>Begins:  <abbr class="timeago" title="{{s.begins | date:medium}}">{{s.begins | date:medium}}</abbr></p>-->
-    <!--<p>Ends: <abbr class="timeago" title="{{s.ends | date:medium}}">{{s.ends | date:medium}}</abbr></p>-->
-    <!--<div>-->
-        <!--<a class="btn" href="{{s.sale}}?apikey=88658e0b728c695d6145ffde625f01f6">Buy {{s.name}}</a>-->
-    <!--</div>-->
+    <product-preview ng-repeat="item in data.products | limitTo:10"></product-preview>
 </ul>

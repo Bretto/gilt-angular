@@ -28,23 +28,23 @@ body {
 }
 
 /* line 27, ../sass/screen.scss */
-.product-preview-bg {
+.sale-preview-bg {
   overflow: hidden;
   position: relative;
 }
 /* line 35, ../sass/screen.scss */
-.product-preview-bg:hover legend {
+.sale-preview-bg:hover legend {
   display: block;
   bottom: 0;
 }
 /* line 43, ../sass/screen.scss */
-.product-preview-bg legend {
+.sale-preview-bg legend {
   margin: 0;
   bottom: -50px;
   position: absolute;
 }
 /* line 49, ../sass/screen.scss */
-.product-preview-bg legend h5 {
+.sale-preview-bg legend h5 {
   position: absolute;
   top: 5px;
   text-align: center;
@@ -58,13 +58,13 @@ body {
   padding-right: 20px;
 }
 /* line 64, ../sass/screen.scss */
-.product-preview-bg legend .product-preview-gradient {
+.sale-preview-bg legend .sale-preview-gradient {
   width: 100%;
   height: 50px;
 }
 
 /* line 75, ../sass/screen.scss */
-.product-detail {
+.sale-detail {
   z-index: 1010;
   -webkit-box-shadow: black 0px 0px 50px;
   -moz-box-shadow: black 0px 0px 50px;
@@ -73,7 +73,7 @@ body {
   width: 370px;
 }
 /* line 82, ../sass/screen.scss */
-.product-detail h4 {
+.sale-detail h4 {
   color: #ffffff;
 }
 
@@ -83,21 +83,21 @@ body {
 }
 
 /* line 93, ../sass/screen.scss */
-.product-detail-title-bg {
+.sale-detail-title-bg {
   padding: 20px;
   background-color: #373737;
 }
 /* line 98, ../sass/screen.scss */
-.product-detail-title-bg span {
+.sale-detail-title-bg span {
   color: #949494;
 }
 /* line 102, ../sass/screen.scss */
-.product-detail-title-bg .timeago {
+.sale-detail-title-bg .timeago {
   color: #d2d2d2;
 }
 
 /* line 108, ../sass/screen.scss */
-.product-detail-bg {
+.sale-detail-bg {
   padding: 20px;
   background-color: #ffffff;
 }
