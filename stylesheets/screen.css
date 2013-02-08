@@ -1,50 +1,130 @@
-/* line 3, ../sass/screen.scss */
+/* line 10, ../sass/base.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 9, ../sass/screen.scss */
-body {
-  padding-top: 40px;
+/* line 18, ../sass/base.scss */
+html, body {
+  background-color: #969696;
+  height: 100%;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 23, ../sass/base.scss */
+img {
+  opacity: 0;
+}
+
+/* line 27, ../sass/base.scss */
+.navbar {
+  max-width: 940px;
+  margin: auto;
+}
+
+/* line 32, ../sass/base.scss */
+.navbar-inner {
+  border-radius: 0;
+}
+/* line 35, ../sass/base.scss */
+.navbar-inner .container {
+  padding-left: 20px;
+}
+
+/* line 41, ../sass/base.scss */
+.nav-lev2 {
+  background-color: #1c1d22;
+}
+
+/* line 47, ../sass/base.scss */
 .thumbnails {
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-left: 0px;
+  padding-left: 19px;
+  padding-bottom: 50px;
 }
-
-/* line 17, ../sass/screen.scss */
+/* line 56, ../sass/base.scss */
 .thumbnails > li {
   margin: 0;
   float: left;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 62, ../sass/base.scss */
 .thumbnail {
   border: none;
   padding: 0;
 }
 
-/* line 27, ../sass/screen.scss */
-.sale-preview-bg {
+/* line 85, ../sass/base.scss */
+.arrow-right-w {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #ffffff;
+}
+
+/* line 94, ../sass/base.scss */
+.arrow-left-w {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #ffffff;
+}
+
+/* line 103, ../sass/base.scss */
+.arrow-right-b {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #373737;
+}
+
+/* line 112, ../sass/base.scss */
+.arrow-left-b {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #373737;
+}
+
+/* line 3, ../sass/sales.scss */
+#sales .sales-details {
+  padding: 20px;
+}
+/* line 7, ../sass/sales.scss */
+#sales .sales-wrapper {
+  background-color: #2a2d34;
+  position: relative;
+}
+/* line 12, ../sass/sales.scss */
+#sales .sale-preview-bg {
+  margin: .5px;
   overflow: hidden;
   position: relative;
 }
-/* line 35, ../sass/screen.scss */
-.sale-preview-bg:hover legend {
+/* line 21, ../sass/sales.scss */
+#sales .sale-preview-bg:hover legend {
   display: block;
-  bottom: 0;
+  bottom: -1px;
 }
-/* line 43, ../sass/screen.scss */
-.sale-preview-bg legend {
+/* line 29, ../sass/sales.scss */
+#sales .sale-preview-bg legend {
   margin: 0;
   bottom: -50px;
   position: absolute;
 }
-/* line 49, ../sass/screen.scss */
-.sale-preview-bg legend h5 {
+/* line 35, ../sass/sales.scss */
+#sales .sale-preview-bg legend h5 {
   position: absolute;
   top: 5px;
   text-align: center;
@@ -57,14 +137,13 @@ body {
   margin-left: 10px;
   padding-right: 20px;
 }
-/* line 64, ../sass/screen.scss */
-.sale-preview-bg legend .sale-preview-gradient {
+/* line 50, ../sass/sales.scss */
+#sales .sale-preview-bg legend .sale-preview-gradient {
   width: 100%;
   height: 50px;
 }
-
-/* line 75, ../sass/screen.scss */
-.sale-detail {
+/* line 61, ../sass/sales.scss */
+#sales .sale-detail {
   z-index: 1010;
   -webkit-box-shadow: black 0px 0px 50px;
   -moz-box-shadow: black 0px 0px 50px;
@@ -72,72 +151,157 @@ body {
   position: absolute;
   width: 370px;
 }
-/* line 82, ../sass/screen.scss */
-.sale-detail h4 {
+/* line 68, ../sass/sales.scss */
+#sales .sale-detail h4 {
   color: #ffffff;
 }
-
-/* line 88, ../sass/screen.scss */
-.progress-wrapper {
+/* line 74, ../sass/sales.scss */
+#sales .progress-wrapper {
   padding: 30%;
 }
-
-/* line 93, ../sass/screen.scss */
-.sale-detail-title-bg {
+/* line 79, ../sass/sales.scss */
+#sales .sale-detail-title-bg {
   padding: 20px;
-  background-color: #373737;
+  background-color: #1c1d22;
 }
-/* line 98, ../sass/screen.scss */
-.sale-detail-title-bg span {
+/* line 84, ../sass/sales.scss */
+#sales .sale-detail-title-bg span {
   color: #949494;
 }
-/* line 102, ../sass/screen.scss */
-.sale-detail-title-bg .timeago {
+/* line 88, ../sass/sales.scss */
+#sales .sale-detail-title-bg .timeago {
   color: #d2d2d2;
 }
-
-/* line 108, ../sass/screen.scss */
-.sale-detail-bg {
+/* line 94, ../sass/sales.scss */
+#sales .sale-detail-bg {
   padding: 20px;
   background-color: #ffffff;
 }
 
-/* line 134, ../sass/screen.scss */
-.arrow-right-w {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid #ffffff;
+/* line 4, ../sass/products.scss */
+.hero-shot {
+  margin-right: 20px;
+  width: 744px;
+  height: 281px;
 }
 
-/* line 143, ../sass/screen.scss */
-.arrow-left-w {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 20px solid #ffffff;
+/* line 12, ../sass/products.scss */
+#products .products-details {
+  padding: 40px 20px;
+}
+/* line 17, ../sass/products.scss */
+#products .products-title {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+/* line 23, ../sass/products.scss */
+#products .bg-color-c2 {
+  background-color: #2a2d34;
+  height: 138px;
+  padding-left: 20px;
+  padding-top: 35px;
+}
+/* line 30, ../sass/products.scss */
+#products .bg-color-c1 {
+  height: 143px;
+  background-color: #1c1d22;
+  padding-left: 20px;
+  padding-top: 35px;
 }
 
-/* line 152, ../sass/screen.scss */
-.arrow-right-b {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid #373737;
+/* line 41, ../sass/products.scss */
+.products-wrapper {
+  position: relative;
+  background-color: #2a2d34;
+}
+/* line 45, ../sass/products.scss */
+.products-wrapper img {
+  width: 300px;
+  height: 400px;
 }
 
-/* line 161, ../sass/screen.scss */
-.arrow-left-b {
+/* line 1, ../sass/product.scss */
+#product {
+  background-color: #2a2d34;
+  padding-bottom: 20px;
+}
+/* line 11, ../sass/product.scss */
+#product .product-details {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+/* line 16, ../sass/product.scss */
+#product .product-img {
+  margin-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  width: 420px;
+  height: 560px;
+}
+/* line 24, ../sass/product.scss */
+#product hr {
+  border-top: 1px solid rgba(238, 238, 238, 0.32);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+/* line 29, ../sass/product.scss */
+#product .btn {
+  margin-top: 20px;
+}
+
+/* line 35, ../sass/product.scss */
+.product-preview-bg {
+  overflow: hidden;
+  position: relative;
+  margin: .5px;
+}
+/* line 43, ../sass/product.scss */
+.product-preview-bg:hover legend {
+  display: block;
+  bottom: -1px;
+}
+/* line 51, ../sass/product.scss */
+.product-preview-bg legend {
+  margin: 0;
+  bottom: -50px;
   position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 20px solid #373737;
+}
+/* line 57, ../sass/product.scss */
+.product-preview-bg legend h5 {
+  position: absolute;
+  top: 5px;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 10px;
+  padding-right: 20px;
+}
+/* line 72, ../sass/product.scss */
+.product-preview-bg legend .product-preview-gradient {
+  width: 100%;
+  height: 50px;
+}
+
+/* line 7, ../sass/screen.scss */
+.main-content {
+  position: relative;
+  background-color: #2a2d34;
+  color: #ffffff;
+  margin-top: 82px;
+  height: 100%;
+}
+
+/* line 15, ../sass/screen.scss */
+footer {
+  background-color: #1c1d22;
+  height: 50px;
+}
+
+/* line 25, ../sass/screen.scss */
+.viewer {
+  opacity: 0;
+  display: block;
 }

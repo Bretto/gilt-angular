@@ -17,7 +17,9 @@ services.constant('GILT', {
 services.factory('MainModel', function ($http, $log, $rootScope, $routeParams, $location) {
 
     var MainModel = {
-
+         saleType: ''
+        ,productURI: ''
+        ,productID: ''
     };
 
     return MainModel;

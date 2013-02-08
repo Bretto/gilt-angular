@@ -1,0 +1,98 @@
+/* line 10, ../sass/base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 18, ../sass/base.scss */
+html, body {
+  background-color: #969696;
+  height: 100%;
+}
+
+/* line 23, ../sass/base.scss */
+im {
+  opacity: 0;
+}
+
+/* line 27, ../sass/base.scss */
+.navbar {
+  max-width: 940px;
+  margin: auto;
+}
+
+/* line 32, ../sass/base.scss */
+.navbar-inner {
+  border-radius: 0;
+}
+/* line 35, ../sass/base.scss */
+.navbar-inner .container {
+  padding-left: 20px;
+}
+
+/* line 41, ../sass/base.scss */
+.nav-lev2 {
+  background-color: #1c1d22;
+}
+
+/* line 47, ../sass/base.scss */
+.thumbnails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 0px;
+  padding-left: 19px;
+  padding-bottom: 50px;
+}
+/* line 56, ../sass/base.scss */
+.thumbnails > li {
+  margin: 0;
+  float: left;
+}
+
+/* line 62, ../sass/base.scss */
+.thumbnail {
+  border: none;
+  padding: 0;
+}
+
+/* line 85, ../sass/base.scss */
+.arrow-right-w {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #ffffff;
+}
+
+/* line 94, ../sass/base.scss */
+.arrow-left-w {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #ffffff;
+}
+
+/* line 103, ../sass/base.scss */
+.arrow-right-b {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #373737;
+}
+
+/* line 112, ../sass/base.scss */
+.arrow-left-b {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #373737;
+}

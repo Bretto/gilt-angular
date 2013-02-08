@@ -1,3 +1,119 @@
 @import "compass/css3";
 @import "compass/utilities";
 
+$c1: #1C1D22;
+$c2: #2A2D34;
+
+
+
+
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+html, body{
+  background-color: #969696;
+  height: 100%;
+}
+
+img{
+  opacity: 0;
+}
+
+.navbar{
+  max-width: 940px;
+  margin: auto;
+}
+
+.navbar-inner{
+  border-radius: 0;
+
+  .container{
+    padding-left: 20px;
+  }
+
+}
+
+.nav-lev2{
+  background-color: $c1;
+
+}
+
+
+.thumbnails{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 0px;
+  padding-left: 19px;
+  padding-bottom: 50px;
+  //background-color: $c2;
+
+  > li {
+    margin: 0;
+    float: left;
+  }
+}
+
+.thumbnail{
+  border: none;
+  padding: 0;
+}
+
+//.arrow-up {
+//  width: 0;
+//  height: 0;
+//  border-left: 20px solid transparent;
+//  border-right: 20px solid transparent;
+//
+//  border-bottom: 20px solid black;
+//}
+//
+//.arrow-down {
+//  width: 0;
+//  height: 0;
+//  border-left: 20px solid transparent;
+//  border-right: 20px solid transparent;
+//
+//  border-top: 20px solid black;
+//}
+
+.arrow-right-w {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #ffffff;
+}
+
+.arrow-left-w {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right:20px solid #ffffff;
+}
+
+.arrow-right-b {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #373737;
+}
+
+.arrow-left-b {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right:20px solid #373737;
+}

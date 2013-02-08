@@ -1,11 +1,19 @@
+<div id="sales" ng-cloak>
+    <div class="container sales-details">
+        <h1>Sales</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
 
-<ul class="thumbnails">
-    <sale-preview ng-repeat="s in data.sales"></sale-preview>
-    <!--<h3><a href="{{s.sale}}?apikey=88658e0b728c695d6145ffde625f01f6">{{s.name}}</a></h3>-->
-    <!--<p>{{s.description}}.</p>-->
-    <!--<p>Begins:  <abbr class="timeago" title="{{s.begins | date:medium}}">{{s.begins | date:medium}}</abbr></p>-->
-    <!--<p>Ends: <abbr class="timeago" title="{{s.ends | date:medium}}">{{s.ends | date:medium}}</abbr></p>-->
-    <!--<div>-->
-        <!--<a class="btn" href="{{s.sale}}?apikey=88658e0b728c695d6145ffde625f01f6">Buy {{s.name}}</a>-->
-    <!--</div>-->
-</ul>
+    <div class="sales-wrapper" set-height-from="sale-height-target" ng-cloak>
+        <ul class="thumbnails">
+            <li ng-repeat="fake in fakies">
+                <fake-img></fake-img>
+            </li>
+        </ul>
+        <ul id="sale-height-target" class="thumbnails">
+            <li ng-repeat="s in data.sales">
+                <sale-preview></sale-preview>
+            </li>
+        </ul>
+    </div>
+</div>

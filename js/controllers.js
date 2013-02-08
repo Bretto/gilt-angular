@@ -15,54 +15,38 @@ controllers.controller('MainContentCtrl', function ($scope, $rootScope, $timeout
     $log.info('MainContentCtrl');
 });
 
-controllers.controller('SalesCtrl', function ($scope, MainModel, $log, $http, $routeParams, GILT){
+controllers.controller('SalesCtrl', function ($scope, MainModel, $log, $http, $routeParams, GILT, $timeout, data){
     $log.info('SalesCtrl');
 
     $scope.MainModel = MainModel;
     MainModel.saleType = $routeParams.type;
 
-    var saleUrl = GILT.SALE + $routeParams.type + GILT.ACTIVE + GILT.APIKEY + GILT.CALLBACK;
+    $scope.data = data;
 
-    $http({method:GILT.METHOD, url:saleUrl}).success(success).error(error);
+    // this is a hack to get the current view to refresh after fade-in
+//    $timeout(function(){
+//        $scope.$digest();
+//    },0 )
 
-    function success(data, status) {
-        $scope.status = status;
-        $scope.data = data;
-        $log.info(data);
-    }
-
-    function error(data, status) {
-        $scope.data = data || "Request failed";
-        $scope.status = status;
-    }
 });
 
-controllers.controller('ProductsCtrl', function ($scope, $log, $routeParams, GILT, $http, MainModel){
+controllers.controller('ProductsCtrl', function ($scope, $log, $routeParams, GILT, $http, MainModel, data, $timeout){
     $log.info('ProductsCtrl');
 
     $scope.MainModel = MainModel;
     MainModel.saleType = $routeParams.type;
     MainModel.productURI = $routeParams.uri;
 
-    var uri = $routeParams.uri.replace(/_/g,'/');
-    var saleUrl = GILT.API + uri + GILT.APIKEY + GILT.CALLBACK;
+    $scope.data = data;
+    $scope.isSoldOut = (data.products) ? false : true;
 
-    $http({method:GILT.METHOD, url:saleUrl}).success(success).error(error);
-
-    function success(data, status) {
-        $scope.status = status;
-        $scope.data = data;
-        $log.info(data);
-    }
-
-    function error(data, status) {
-        $scope.data = data || "Request failed";
-        $scope.status = status;
-    }
+//    $timeout(function(){
+//        $scope.$digest();
+//    },0 );
 
 });
 
-controllers.controller('ProductCtrl', function ($scope, $log, $routeParams, GILT, $http, MainModel){
+controllers.controller('ProductCtrl', function ($scope, $log, $routeParams, GILT, $http, MainModel, promiseData, $timeout){
     $log.info('ProductCtrl');
 
     $scope.MainModel = MainModel;
@@ -70,21 +54,12 @@ controllers.controller('ProductCtrl', function ($scope, $log, $routeParams, GILT
     MainModel.productURI = $routeParams.uri;
     MainModel.productID = $routeParams.id;
 
-    var uri = $routeParams.uri.replace(/_/g,'/');
-    var itemUrl = GILT.API + uri + GILT.APIKEY + GILT.CALLBACK;
+    $scope.data = promiseData.data;
+    $scope.item = promiseData.item;
 
-    $http({method:GILT.METHOD, url:itemUrl}).success(success).error(error);
-
-    function success(data, status) {
-        $scope.status = status;
-        $scope.data = data;
-        $log.info(data);
-    }
-
-    function error(data, status) {
-        $scope.data = data || "Request failed";
-        $scope.status = status;
-    }
+//    $timeout(function(){
+//        $scope.$digest();
+//    },0 );
 
 });
 

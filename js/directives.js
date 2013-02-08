@@ -16,9 +16,49 @@ directives.directive('renderComplete', function ($log) {
     }
 });
 
+directives.directive('setHeightFrom', function ($log, $parse, $timeout) {
+
+    function link(scope, element, attr, ctrl) {
+
+        scope.$watch(function () {
+            return $('#' + attr.setHeightFrom).height();
+        }, function (newValue) {
+            //$log.info('setHeightFrom' + newValue);
+
+            $timeout(function(){
+                $('#' + attr.setHeightFrom).scope().$digest();
+            }, 100);
+
+            element.height(newValue + 20);
+        });
+    }
+
+    return {
+        restrict:'A',
+        link:link
+    }
+});
+
+directives.directive('imgFadeIn', function ($log, $parse, $timeout) {
+    function link(scope, element, attr, ctrl) {
+
+        element.load(function () {
+            $log.info('load')
+            $(this).fadeTo(500,1);
+        });
+    }
+
+    return {
+        restrict:'A',
+        link:link
+    }
+});
+
+
 directives.directive('mainNav', function ($log, $parse) {
 
     function link(scope, elem, attr, ctrl) {
+
     }
 
     return {
@@ -47,8 +87,10 @@ directives.directive('mainContent', function ($log, $parse) {
 directives.directive('salePreview', function ($log, $parse, $timeout) {
 
     function link(scope, element, attr, ctrl) {
-        $log.info('salePreview link');
-
+        //$log.info('salePreview link');
+//        $timeout(function () {
+//            element.fadeTo(500, 1);
+//        }, 100 * scope.$index);
     }
 
     return {
@@ -58,6 +100,23 @@ directives.directive('salePreview', function ($log, $parse, $timeout) {
         link:link
     }
 });
+
+//directives.directive('fakeImg', function ($log, $parse, $timeout) {
+//
+//    function link(scope, element, attr, ctrl) {
+//        $log.info('fakeImg link');
+//        $timeout(function () {
+//            element.fadeTo(500, 1);
+//        }, 100 * scope.$index);
+//    }
+//
+//    return {
+//        replace:true,
+//        restrict:'E',
+//        templateUrl:'partial/fake-img.html',
+//        link:link
+//    }
+//});
 
 directives.directive('saleDetail', function ($log, $parse, $timeout) {
 
@@ -69,10 +128,10 @@ directives.directive('saleDetail', function ($log, $parse, $timeout) {
         // Calculate the current position and size of the directive element.
         function getPosition(elem) {
             return {
-                width: elem.prop( 'offsetWidth' ),
-                height: elem.prop( 'offsetHeight' ),
-                top: elem.prop( 'offsetTop' ),
-                left: elem.prop( 'offsetLeft' )
+                width:elem.prop('offsetWidth'),
+                height:elem.prop('offsetHeight'),
+                top:elem.prop('offsetTop'),
+                left:elem.prop('offsetLeft')
             };
         }
 
@@ -85,92 +144,92 @@ directives.directive('saleDetail', function ($log, $parse, $timeout) {
                 limit;
 
             // Set the initial positioning.
-            element.css({ top: 0, left: 0, display: 'block' });
+            element.css({ top:0, left:0, display:'block' });
 
             position = getPosition(element.parent());
 
             limit = getPosition(element.parent().parent());
 
             // Get the height and width of the tooltip so we can center it.
-            ttWidth = element.prop( 'offsetWidth' );
-            ttHeight = element.prop( 'offsetHeight' );
+            ttWidth = element.prop('offsetWidth');
+            ttHeight = element.prop('offsetHeight');
 
             var scrollTop = $(document).scrollTop()
             var scrollBottom = $(window).scrollTop() + $(window).height();
 
             ttPosition = {};
 
-            function getX(v){
+            function getX(v) {
                 var x;
-                if(v - ttWidth < 0){
+                if (v - ttWidth < 0) {
                     x = 'right';
-                }else{
+                } else {
                     x = 'left';
                 }
                 return x;
             }
 
 
-            function getY(v){
+            function getY(v) {
                 var y;
 
-                if(v - ttHeight/2 < scrollTop ){
+                if (v - ttHeight / 2 < scrollTop) {
                     y = 'top';
-                }else if(v + position.height + ttHeight/2 > scrollBottom){
+                } else if (v + position.height + ttHeight / 2 > scrollBottom) {
                     y = 'bottom';
-                }else{
+                } else {
                     y = 'middle';
                 }
 
                 return y;
             }
 
-            function getTop(v){
+            function getTop(v) {
                 var top;
 
-                if(v === 'top'){
-                    top = position.top  + 'px';
-                }else if(v === 'bottom'){
-                    top = ((position.top + position.height)  - ttHeight)  + 'px';
-                }else if(v === 'middle'){
-                    top = ((position.top + position.height / 2)  - ttHeight/2) + 'px';
+                if (v === 'top') {
+                    top = position.top + 'px';
+                } else if (v === 'bottom') {
+                    top = ((position.top + position.height) - ttHeight) + 'px';
+                } else if (v === 'middle') {
+                    top = ((position.top + position.height / 2) - ttHeight / 2) + 'px';
                 }
 
                 return top;
             }
 
-            function getLeft(v){
+            function getLeft(v) {
                 var left;
 
-                if( v === 'right' ){
+                if (v === 'right') {
                     left = (position.left + position.width) + 'px';
-                }else{
+                } else {
                     left = (position.left - ttWidth) + 'px';
                 }
 
                 return left;
             }
 
-            function getArrowTop(v){
+            function getArrowTop(v) {
                 var top;
 
-                if(v === 'top'){
+                if (v === 'top') {
                     top = 20 + 'px'
-                }else if(v === 'bottom'){
+                } else if (v === 'bottom') {
                     top = ttHeight - 60 + 'px';
-                }else if(v === 'middle'){
-                    top =  (ttHeight / 2 ) - 20 + 'px';
+                } else if (v === 'middle') {
+                    top = (ttHeight / 2 ) - 20 + 'px';
                 }
 
                 return top;
             }
 
-            function getArrowLeft(v){
+            function getArrowLeft(v) {
                 var left;
 
-                if( v === 'right' ){
+                if (v === 'right') {
                     left = -20 + 'px';
-                }else{
+                } else {
                     left = ttWidth + 'px';
                 }
 
@@ -185,12 +244,12 @@ directives.directive('saleDetail', function ($log, $parse, $timeout) {
 
             var arrowPosition = {};
 
-            scope.getArrow = function(){
+            scope.getArrow = function () {
                 var arrow;
-                if(ttPosition.x === 'left'){
-                    arrow = (ttPosition.y === 'top')? 'arrow-right-b' : 'arrow-right-w';
-                }else{
-                    arrow = (ttPosition.y === 'top')? 'arrow-left-b' : 'arrow-left-w';
+                if (ttPosition.x === 'left') {
+                    arrow = (ttPosition.y === 'top') ? 'arrow-right-b' : 'arrow-right-w';
+                } else {
+                    arrow = (ttPosition.y === 'top') ? 'arrow-left-b' : 'arrow-left-w';
                 }
                 return arrow;
             }
@@ -199,8 +258,8 @@ directives.directive('saleDetail', function ($log, $parse, $timeout) {
             arrowPosition.top = getArrowTop(ttPosition.y);
 
             // Now set the calculated positioning.
-            element.css( ttPosition );
-            $('.arrow').css( arrowPosition );
+            element.css(ttPosition);
+            $('.arrow').css(arrowPosition);
 
             // And show the tooltip.
             scope.isOpen = true;
@@ -218,22 +277,22 @@ directives.directive('saleDetail', function ($log, $parse, $timeout) {
 
         var timeoutId;
 
-        element.parent().bind( 'mouseenter', function() {
-            timeoutId = $timeout(function() {
-                scope.$apply( show );
+        element.parent().bind('mouseenter', function () {
+            timeoutId = $timeout(function () {
+                scope.$apply(show);
             }, 1000);
 
 
         });
-        element.parent().bind( 'mouseleave', function() {
-            scope.$apply( hide );
+        element.parent().bind('mouseleave', function () {
+            scope.$apply(hide);
             $timeout.cancel(timeoutId);
         });
     }
 
     return {
         restrict:'E',
-        replace: true,
+        replace:true,
         templateUrl:'partial/sale-detail.html',
         link:link
     }
@@ -250,7 +309,7 @@ directives.directive('productPreview', function ($log, $parse, $http, GILT) {
         function success(data, status) {
             scope.status = status;
             scope.data = data;
-            $log.info(data);
+            //$log.info(data);
         }
 
         function error(data, status) {
@@ -265,4 +324,111 @@ directives.directive('productPreview', function ($log, $parse, $http, GILT) {
         templateUrl:'partial/product-preview.html',
         link:link
     }
+});
+
+directives.directive('testView', function ($http, $templateCache, $route, $anchorScroll, $compile, $controller, $log, $timeout) {
+
+    return {
+        restrict:'ECA',
+        terminal:true,
+        link:function (scope, element, attr) {
+            var lastScope, locals, template, state, templateLoaded,
+                time = 1000,
+                onloadExp = attr.onload || '';
+
+            scope.$on('$routeChangeStart', fadeOut);
+
+            scope.$on('$routeChangeSuccess', update);
+            update();
+
+
+            function destroyLastScope() {
+                if (lastScope) {
+                    lastScope.$destroy();
+                    lastScope = null;
+                }
+            }
+
+            function clearContent() {
+                element.html('');
+                destroyLastScope();
+            }
+
+            function compileTemplate(){
+                element.html(template);
+                destroyLastScope();
+
+                var link = $compile(element.contents()),
+                    current = $route.current,
+                    controller;
+
+                lastScope = current.scope = scope.$new();
+                if (current.controller) {
+                    locals.$scope = lastScope;
+                    controller = $controller(current.controller, locals);
+                    element.contents().data('$ngControllerController', controller);
+                }
+
+                link(lastScope);
+                lastScope.$emit('$viewContentLoaded');
+                lastScope.$eval(onloadExp);
+
+                $timeout(function(){
+                    lastScope.$digest();
+                },0 );
+
+                // $anchorScroll might listen on event...
+                $anchorScroll();
+            }
+
+            function fadeIn(){
+                compileTemplate();
+                templateLoaded = false;
+                element.fadeTo(time, 1, function () {
+                    $log.info('fade-in content');
+                    fadeInComplete();
+                });
+            }
+
+            function fadeInComplete() {
+                $log.info('fade-in content complete');
+            }
+
+            function fadeOut(){
+
+                if (element.html() !== ''){
+                    state = 'fading-out-template';
+                    element.fadeTo(time,0, function () {
+                        fadeOutComplete();
+                    });
+                }else{
+                    state = 'waiting-for-template';
+                }
+            }
+
+            function fadeOutComplete() {
+                clearContent();
+                state = 'waiting-for-template';
+                if(templateLoaded){
+                    fadeIn();
+                }
+            }
+
+            function update() {
+
+                templateLoaded = true;
+                locals = $route.current && $route.current.locals;
+                template = locals && locals.$template;
+
+                if (template && template !== '') {
+
+                    $log.info('Content Loaded');
+
+                    if(state === 'fading-out-template') return;
+
+                    fadeIn();
+                }
+            }
+        }
+    };
 });
