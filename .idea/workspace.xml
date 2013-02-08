@@ -20,19 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="products.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/products.scss">
+      <file leaf-file-name="sales.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/sales.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="screen.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/screen.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="10" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+            <state line="23" column="18" selection-start="326" selection-end="326" vertical-scroll-proportion="0.3938356">
               <folding />
             </state>
           </provider>
@@ -41,25 +32,34 @@
       <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="356" column="36" selection-start="9406" selection-end="9406" vertical-scroll-proportion="0.0">
+            <state line="135" column="52" selection-start="3295" selection-end="3295" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/partial/product.html">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="500" selection-end="500" vertical-scroll-proportion="0.25301206">
+            <state line="21" column="0" selection-start="657" selection-end="657" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/product.scss">
+      <file leaf-file-name="main-content.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partial/main-content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+            <state line="3" column="35" selection-start="146" selection-end="146" vertical-scroll-proportion="-1.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/products.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="19" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,37 +74,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controllers.js">
+      <file leaf-file-name="sales.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partial/sales.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0">
+            <state line="13" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="-8.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
+      <file leaf-file-name="screen.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/screen.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="50" selection-start="3013" selection-end="3013" vertical-scroll-proportion="0.0">
+            <state line="46" column="0" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sale-popup.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partial/sale-popup.html">
+      <file leaf-file-name="base.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="6" selection-start="627" selection-end="627" vertical-scroll-proportion="-11.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product-thumb.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partial/product-thumb.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="5" selection-start="410" selection-end="410" vertical-scroll-proportion="-6.25">
+            <state line="14" column="50" selection-start="181" selection-end="307" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,22 +111,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/partial/main-content.html" />
-        <option value="$PROJECT_DIR$/partial/sale-popup.html" />
-        <option value="$PROJECT_DIR$/sass/base.scss" />
-        <option value="$PROJECT_DIR$/partial/sale-preview.html" />
-        <option value="$PROJECT_DIR$/partial/sales.html" />
-        <option value="$PROJECT_DIR$/sass/sales.scss" />
-        <option value="$PROJECT_DIR$/partial/product-preview.html" />
         <option value="$PROJECT_DIR$/partial/sale-thumb.html" />
-        <option value="$PROJECT_DIR$/sass/screen.scss" />
-        <option value="$PROJECT_DIR$/sass/products.scss" />
         <option value="$PROJECT_DIR$/sass/product.scss" />
         <option value="$PROJECT_DIR$/partial/products.html" />
-        <option value="$PROJECT_DIR$/js/directives.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
+        <option value="$PROJECT_DIR$/partial/main-nav.html" />
         <option value="$PROJECT_DIR$/partial/product.html" />
+        <option value="$PROJECT_DIR$/partial/hero.html" />
+        <option value="$PROJECT_DIR$/sass/home.scss" />
+        <option value="$PROJECT_DIR$/sass/products.scss" />
+        <option value="$PROJECT_DIR$/partial/main-content.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/sass/base.scss" />
+        <option value="$PROJECT_DIR$/sass/screen.scss" />
+        <option value="$PROJECT_DIR$/js/directives.js" />
+        <option value="$PROJECT_DIR$/sass/sales.scss" />
       </list>
     </option>
   </component>
@@ -264,24 +255,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gilt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gilt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -292,7 +265,7 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../responsive-layout" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -451,58 +424,23 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/print.scss">
+    <entry file="file://$PROJECT_DIR$/partial/fake-img.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/ie.scss">
+    <entry file="file://$PROJECT_DIR$/partial/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="492" selection-end="492" vertical-scroll-proportion="-8.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/base.scss">
+    <entry file="file://$PROJECT_DIR$/partial/hero.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partial/sales.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/sales.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partial/sale-thumb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/screen.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="10" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/products.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+        <state line="4" column="6" selection-start="80" selection-end="80" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
@@ -514,9 +452,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partial/sale-popup.html">
+    <entry file="file://$PROJECT_DIR$/stylesheets/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="627" selection-end="627" vertical-scroll-proportion="-11.25">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partial/sales.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/products.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="19" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/products.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -528,37 +494,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/partial/main-content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="35" selection-start="146" selection-end="146" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="657" selection-end="657" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="50" selection-start="181" selection-end="307" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/screen.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="356" column="36" selection-start="9406" selection-end="9406" vertical-scroll-proportion="0.0">
+        <state line="135" column="52" selection-start="3295" selection-end="3295" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/sass/sales.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="50" selection-start="3013" selection-end="3013" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partial/product-thumb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="5" selection-start="410" selection-end="410" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partial/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="500" selection-end="500" vertical-scroll-proportion="0.25301206">
+        <state line="23" column="18" selection-start="326" selection-end="326" vertical-scroll-proportion="0.3938356">
           <folding />
         </state>
       </provider>

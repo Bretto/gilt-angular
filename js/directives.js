@@ -16,28 +16,28 @@ directives.directive('renderComplete', function ($log) {
     }
 });
 
-directives.directive('setHeightFrom', function ($log, $parse, $timeout) {
-
-    function link(scope, element, attr, ctrl) {
-
-        scope.$watch(function () {
-            return $('#' + attr.setHeightFrom).height();
-        }, function (newValue) {
-            //$log.info('setHeightFrom' + newValue);
-
-            $timeout(function(){
-                $('#' + attr.setHeightFrom).scope().$digest();
-            }, 100);
-
-            element.height(newValue + 20);
-        });
-    }
-
-    return {
-        restrict:'A',
-        link:link
-    }
-});
+//directives.directive('setHeightFrom', function ($log, $parse, $timeout) {
+//
+//    function link(scope, element, attr, ctrl) {
+//
+//        scope.$watch(function () {
+//            return $('#' + attr.setHeightFrom).height();
+//        }, function (newValue) {
+//            //$log.info('setHeightFrom' + newValue);
+//
+//            $timeout(function(){
+//                $('#' + attr.setHeightFrom).scope().$digest();
+//            }, 100);
+//
+//            element.height(newValue + 20);
+//        });
+//    }
+//
+//    return {
+//        restrict:'A',
+//        link:link
+//    }
+//});
 
 directives.directive('imgFadeIn', function ($log, $parse, $timeout) {
     function link(scope, element, attr, ctrl) {
@@ -124,10 +124,10 @@ directives.directive('salePopup', function ($log, $parse, $timeout) {
                 ttPosition,
                 limit;
 
-            // Set the initial positioning.
-            element.css({ top:0, left:0, display:'block' });
-
             position = getPosition(element.parent());
+
+            // Set the initial positioning.
+            element.css({ top:position.top, left:position.left, display:'block' });
 
             limit = getPosition(element.parent().parent());
 

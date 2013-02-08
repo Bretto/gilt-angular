@@ -9,6 +9,10 @@ $c2: #2A2D34;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+
+  //@include transition-property(all);
+  //@include transition-duration(.2s);
+  //@include transition-timing-function(ease-out);
 }
 
 
@@ -45,13 +49,10 @@ img{
 
 
 .thumbnails{
-  position: absolute;
-  top: 0;
-  left: 0;
+
   margin-left: 0px;
   padding-left: 19px;
-  padding-bottom: 50px;
-  //background-color: $c2;
+  padding-bottom: 20px;
 
   > li {
     margin: 0;

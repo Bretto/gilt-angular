@@ -1,22 +1,28 @@
 @import "base.scss";
+@import "home.scss";
 @import "sales.scss";
 @import "products.scss";
 @import "product.scss";
 
 
 .main-content{
-  position: relative;
   background-color: $c2;
   color: #ffffff;
   margin-top: 82px;
-  height: 100%;
+  min-height: 800px !important;
 }
 
 footer{
   background-color: $c1;
   height: 50px;
+  max-width: 940px;
+  margin: auto;
 }
 
+.viewer{
+  opacity: 0;
+  display: block;
+}
 
 .thumb {
 
@@ -34,6 +40,11 @@ footer{
   }
 
   legend {
+
+    @include transition-property(all);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-out);
+
 
     margin: 0;
     bottom: -50px;
@@ -66,15 +77,3 @@ footer{
 
 
 
-
-.viewer{
-  opacity: 0;
-  display: block;
-}
-
-//a.thumbnail:hover {
-//  border-color: #0088cc;
-//  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
-//  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
-//  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
-//}
