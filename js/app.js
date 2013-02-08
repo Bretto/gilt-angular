@@ -66,10 +66,11 @@ angular.module('GiltApp', ['GiltApp.filters', 'GiltApp.services', 'GiltApp.direc
 
                     var successCb = function (result)
                     {
-                        //deferred.resolve(result);
+
                         promiseData.item = result;
-                        $http({method:GILT.METHOD, url:productURI}).success(successCb2).error(errorCb2);
+                        deferred.resolve(promiseData);
                         $log.info(result);
+                        //$http({method:GILT.METHOD, url:productURI}).success(successCb2).error(errorCb2);
                     };
 
                     var errorCb = function (error)

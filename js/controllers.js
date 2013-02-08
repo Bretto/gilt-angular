@@ -23,11 +23,6 @@ controllers.controller('SalesCtrl', function ($scope, MainModel, $log, $http, $r
 
     $scope.data = data;
 
-    // this is a hack to get the current view to refresh after fade-in
-//    $timeout(function(){
-//        $scope.$digest();
-//    },0 )
-
 });
 
 controllers.controller('ProductsCtrl', function ($scope, $log, $routeParams, GILT, $http, MainModel, data, $timeout){
@@ -39,10 +34,6 @@ controllers.controller('ProductsCtrl', function ($scope, $log, $routeParams, GIL
 
     $scope.data = data;
     $scope.isSoldOut = (data.products) ? false : true;
-
-//    $timeout(function(){
-//        $scope.$digest();
-//    },0 );
 
 });
 
@@ -56,10 +47,6 @@ controllers.controller('ProductCtrl', function ($scope, $log, $routeParams, GILT
 
     $scope.data = promiseData.data;
     $scope.item = promiseData.item;
-
-//    $timeout(function(){
-//        $scope.$digest();
-//    },0 );
 
 });
 

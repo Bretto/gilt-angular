@@ -18,6 +18,51 @@ footer{
 }
 
 
+.thumb {
+
+  margin: .5px;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+
+    legend {
+      display: block;
+      bottom: -1px;
+    }
+
+  }
+
+  legend {
+
+    margin: 0;
+    bottom: -50px;
+    position: absolute;
+
+    h5 {
+      position: absolute;
+      top: 5px;
+      text-align: center;
+      text-shadow: 0 0 3px rgba(0, 0, 0, .75);
+      color: #ffffff;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      margin-left: 10px;
+      padding-right: 20px;
+
+    }
+
+    .gradient {
+      opacity: 1;
+      width: 100% !important;
+      height: 50px !important;
+    }
+
+  }
+
+}
 
 
 

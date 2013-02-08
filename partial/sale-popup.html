@@ -1,6 +1,6 @@
-<div class="sale-detail">
+<div class="sale-popup">
     <div class="arrow" ng-class="getArrow()"></div>
-    <div class="sale-detail-title-bg">
+    <header>
         <h4>
             {{s.name}}
         </h4>
@@ -9,11 +9,11 @@
             | Ends:
             <span class="timeago" title="{{s.ends | date:medium}}">{{s.ends | date:medium}}</span>
         </span>
-    </div>
-    <div class="sale-detail-bg">
+    </header>
+    <section>
         <p>{{s.description}}.</p>
         <div>
             <a class="btn btn-inverse" href="#/sale/{{saleType}}/product/{{s.sale | cleanURL}}">Buy {{s.name}}</a>
         </div>
-    </div>
+    </section>
 </div>

@@ -1,19 +1,21 @@
-/* line 10, ../sass/base.scss */
+/* line 8, ../sass/base.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 18, ../sass/base.scss */
+/* line 16, ../sass/base.scss */
 html, body {
   background-color: #969696;
   height: 100%;
 }
 
-/* line 23, ../sass/base.scss */
+/* line 21, ../sass/base.scss */
 img {
   opacity: 0;
+  border: null;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* line 27, ../sass/base.scss */
@@ -84,7 +86,7 @@ img {
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 20px solid #373737;
+  border-left: 20px solid #1C1D22;
 }
 
 /* line 112, ../sass/base.scss */
@@ -94,56 +96,25 @@ img {
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-right: 20px solid #373737;
+  border-right: 20px solid #1C1D22;
 }
 
 /* line 3, ../sass/sales.scss */
-#sales .sales-details {
+#sales article {
   padding: 20px;
 }
 /* line 7, ../sass/sales.scss */
-#sales .sales-wrapper {
+#sales section {
   background-color: #2a2d34;
   position: relative;
 }
-/* line 12, ../sass/sales.scss */
-#sales .sale-preview-bg {
-  margin: .5px;
-  overflow: hidden;
-  position: relative;
+/* line 11, ../sass/sales.scss */
+#sales section img {
+  width: 300px;
+  height: 184px;
 }
-/* line 21, ../sass/sales.scss */
-#sales .sale-preview-bg:hover legend {
-  display: block;
-  bottom: -1px;
-}
-/* line 29, ../sass/sales.scss */
-#sales .sale-preview-bg legend {
-  margin: 0;
-  bottom: -50px;
-  position: absolute;
-}
-/* line 35, ../sass/sales.scss */
-#sales .sale-preview-bg legend h5 {
-  position: absolute;
-  top: 5px;
-  text-align: center;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
-  color: #ffffff;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
-  overflow: hidden;
-  margin-left: 10px;
-  padding-right: 20px;
-}
-/* line 50, ../sass/sales.scss */
-#sales .sale-preview-bg legend .sale-preview-gradient {
-  width: 100%;
-  height: 50px;
-}
-/* line 61, ../sass/sales.scss */
-#sales .sale-detail {
+/* line 18, ../sass/sales.scss */
+#sales .sale-popup {
   z-index: 1010;
   -webkit-box-shadow: black 0px 0px 50px;
   -moz-box-shadow: black 0px 0px 50px;
@@ -151,71 +122,57 @@ img {
   position: absolute;
   width: 370px;
 }
-/* line 68, ../sass/sales.scss */
-#sales .sale-detail h4 {
-  color: #ffffff;
-}
-/* line 74, ../sass/sales.scss */
-#sales .progress-wrapper {
-  padding: 30%;
-}
-/* line 79, ../sass/sales.scss */
-#sales .sale-detail-title-bg {
+/* line 25, ../sass/sales.scss */
+#sales .sale-popup header {
   padding: 20px;
   background-color: #1c1d22;
 }
-/* line 84, ../sass/sales.scss */
-#sales .sale-detail-title-bg span {
+/* line 29, ../sass/sales.scss */
+#sales .sale-popup header span {
   color: #949494;
 }
-/* line 88, ../sass/sales.scss */
-#sales .sale-detail-title-bg .timeago {
+/* line 33, ../sass/sales.scss */
+#sales .sale-popup header .timeago {
   color: #d2d2d2;
 }
-/* line 94, ../sass/sales.scss */
-#sales .sale-detail-bg {
+/* line 39, ../sass/sales.scss */
+#sales .sale-popup section {
   padding: 20px;
   background-color: #ffffff;
+  color: #1c1d22;
 }
 
-/* line 4, ../sass/products.scss */
-.hero-shot {
+/* line 7, ../sass/products.scss */
+#products header img {
   margin-right: 20px;
   width: 744px;
   height: 281px;
 }
-
-/* line 12, ../sass/products.scss */
-#products .products-details {
-  padding: 40px 20px;
-}
-/* line 17, ../sass/products.scss */
-#products .products-title {
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-/* line 23, ../sass/products.scss */
-#products .bg-color-c2 {
+/* line 13, ../sass/products.scss */
+#products header .bg-color-c2 {
   background-color: #2a2d34;
   height: 138px;
   padding-left: 20px;
   padding-top: 35px;
 }
-/* line 30, ../sass/products.scss */
-#products .bg-color-c1 {
+/* line 20, ../sass/products.scss */
+#products header .bg-color-c1 {
   height: 143px;
   background-color: #1c1d22;
   padding-left: 20px;
   padding-top: 35px;
 }
-
-/* line 41, ../sass/products.scss */
-.products-wrapper {
+/* line 28, ../sass/products.scss */
+#products article {
+  padding: 40px 20px;
+}
+/* line 33, ../sass/products.scss */
+#products section {
   position: relative;
   background-color: #2a2d34;
 }
-/* line 45, ../sass/products.scss */
-.products-wrapper img {
+/* line 37, ../sass/products.scss */
+#products section img {
   width: 300px;
   height: 400px;
 }
@@ -225,64 +182,28 @@ img {
   background-color: #2a2d34;
   padding-bottom: 20px;
 }
-/* line 11, ../sass/product.scss */
-#product .product-details {
+/* line 6, ../sass/product.scss */
+#product article {
+  padding-top: 0;
   padding-left: 20px;
   padding-bottom: 20px;
 }
-/* line 16, ../sass/product.scss */
-#product .product-img {
+/* line 12, ../sass/product.scss */
+#product img {
   margin-left: 20px;
-  padding-right: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
-  width: 420px;
-  height: 560px;
+  width: 420px !important;
+  height: 560px !important;
 }
-/* line 24, ../sass/product.scss */
+/* line 20, ../sass/product.scss */
 #product hr {
   border-top: 1px solid rgba(238, 238, 238, 0.32);
   border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
-/* line 29, ../sass/product.scss */
+/* line 25, ../sass/product.scss */
 #product .btn {
   margin-top: 20px;
-}
-
-/* line 35, ../sass/product.scss */
-.product-preview-bg {
-  overflow: hidden;
-  position: relative;
-  margin: .5px;
-}
-/* line 43, ../sass/product.scss */
-.product-preview-bg:hover legend {
-  display: block;
-  bottom: -1px;
-}
-/* line 51, ../sass/product.scss */
-.product-preview-bg legend {
-  margin: 0;
-  bottom: -50px;
-  position: absolute;
-}
-/* line 57, ../sass/product.scss */
-.product-preview-bg legend h5 {
-  position: absolute;
-  top: 5px;
-  text-align: center;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
-  color: #ffffff;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
-  overflow: hidden;
-  margin-left: 10px;
-  padding-right: 20px;
-}
-/* line 72, ../sass/product.scss */
-.product-preview-bg legend .product-preview-gradient {
-  width: 100%;
-  height: 50px;
 }
 
 /* line 7, ../sass/screen.scss */
@@ -300,7 +221,45 @@ footer {
   height: 50px;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
+.thumb {
+  margin: .5px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 29, ../sass/screen.scss */
+.thumb:hover legend {
+  display: block;
+  bottom: -1px;
+}
+/* line 36, ../sass/screen.scss */
+.thumb legend {
+  margin: 0;
+  bottom: -50px;
+  position: absolute;
+}
+/* line 42, ../sass/screen.scss */
+.thumb legend h5 {
+  position: absolute;
+  top: 5px;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 10px;
+  padding-right: 20px;
+}
+/* line 57, ../sass/screen.scss */
+.thumb legend .gradient {
+  opacity: 1;
+  width: 100% !important;
+  height: 50px !important;
+}
+
+/* line 70, ../sass/screen.scss */
 .viewer {
   opacity: 0;
   display: block;

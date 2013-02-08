@@ -1,32 +1,28 @@
-<div id="products" class="container" ng-cloak>
-    <div>
-        <img src="{{data.image_urls.744x281[0].url}}" alt="" width="744px" height="281px" class="pull-right hero-shot" img-fade-in/>
+<div id="products">
 
+    <header>
+        <img src="{{data.image_urls.744x281[0].url}}" class="pull-right"
+             img-fade-in/>
         <div class="bg-color-c2">
             <p>Begins:</p>
-
             <h3 class="timeago" title="{{data.begins | date:medium}}">{{data.begins | date:medium}}</h3>
         </div>
         <div class="bg-color-c1">
             <p>Ends:</p>
-
             <h3 class="timeago" title="{{data.ends | date:medium}}">{{data.ends | date:medium}}</h3>
         </div>
-    </div>
-    <div class="container products-details">
+    </header>
+
+    <article>
         <h1>{{data.name}}</h1>
-
         <p>{{data.description}}</p>
-
         <p ng-show="isSoldOut">SOLD OUT</p>
-    </div>
-    <!--<div class="products-title">-->
-    <!--<h3 >Products</h3>-->
-    <!--<p ng-show="isSoldOut">SOLD OUT</p>-->
-    <!--</div>-->
-</div>
-<div class="products-wrapper" ng-cloak set-height-from="products-height-target">
-    <ul class="thumbnails" id="products-height-target">
-        <product-preview ng-repeat="item in data.products | limitTo:10"></product-preview>
-    </ul>
+    </article>
+
+    <section set-height-from="products-height-target">
+        <ul class="thumbnails" id="products-height-target">
+            <product-thumb ng-repeat="item in data.products | limitTo:9"></product-thumb>
+        </ul>
+    </section>
+
 </div>

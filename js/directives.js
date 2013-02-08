@@ -84,41 +84,22 @@ directives.directive('mainContent', function ($log, $parse) {
     }
 });
 
-directives.directive('salePreview', function ($log, $parse, $timeout) {
+directives.directive('saleThumb', function ($log, $parse, $timeout) {
 
     function link(scope, element, attr, ctrl) {
-        //$log.info('salePreview link');
-//        $timeout(function () {
-//            element.fadeTo(500, 1);
-//        }, 100 * scope.$index);
+
     }
 
     return {
         replace:true,
         restrict:'E',
-        templateUrl:'partial/sale-preview.html',
+        templateUrl:'partial/sale-thumb.html',
         link:link
     }
 });
 
-//directives.directive('fakeImg', function ($log, $parse, $timeout) {
-//
-//    function link(scope, element, attr, ctrl) {
-//        $log.info('fakeImg link');
-//        $timeout(function () {
-//            element.fadeTo(500, 1);
-//        }, 100 * scope.$index);
-//    }
-//
-//    return {
-//        replace:true,
-//        restrict:'E',
-//        templateUrl:'partial/fake-img.html',
-//        link:link
-//    }
-//});
 
-directives.directive('saleDetail', function ($log, $parse, $timeout) {
+directives.directive('salePopup', function ($log, $parse, $timeout) {
 
     function link(scope, element, attr, ctrl) {
 
@@ -293,12 +274,12 @@ directives.directive('saleDetail', function ($log, $parse, $timeout) {
     return {
         restrict:'E',
         replace:true,
-        templateUrl:'partial/sale-detail.html',
+        templateUrl:'partial/sale-popup.html',
         link:link
     }
 });
 
-directives.directive('productPreview', function ($log, $parse, $http, GILT) {
+directives.directive('productThumb', function ($log, $parse, $http, GILT) {
 
     function link(scope, elem, attr, ctrl) {
 
@@ -321,7 +302,7 @@ directives.directive('productPreview', function ($log, $parse, $http, GILT) {
     return {
         replace:true,
         restrict:'E',
-        templateUrl:'partial/product-preview.html',
+        templateUrl:'partial/product-thumb.html',
         link:link
     }
 });

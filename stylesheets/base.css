@@ -1,19 +1,21 @@
-/* line 10, ../sass/base.scss */
+/* line 8, ../sass/base.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 18, ../sass/base.scss */
+/* line 16, ../sass/base.scss */
 html, body {
   background-color: #969696;
   height: 100%;
 }
 
-/* line 23, ../sass/base.scss */
-im {
+/* line 21, ../sass/base.scss */
+img {
   opacity: 0;
+  border: null;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* line 27, ../sass/base.scss */
@@ -84,7 +86,7 @@ im {
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 20px solid #373737;
+  border-left: 20px solid #1C1D22;
 }
 
 /* line 112, ../sass/base.scss */
@@ -94,5 +96,5 @@ im {
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-right: 20px solid #373737;
+  border-right: 20px solid #1C1D22;
 }

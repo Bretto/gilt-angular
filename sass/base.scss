@@ -5,8 +5,6 @@ $c1: #1C1D22;
 $c2: #2A2D34;
 
 
-
-
 *{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -22,6 +20,8 @@ html, body{
 
 img{
   opacity: 0;
+  border: null;
+  background-color: rgba(255, 255, 255, .2);
 }
 
 .navbar{
@@ -106,7 +106,7 @@ img{
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 20px solid #373737;
+  border-left: 20px solid #1C1D22;
 }
 
 .arrow-left-b {
@@ -115,5 +115,5 @@ img{
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-right:20px solid #373737;
+  border-right:20px solid #1C1D22;
 }
