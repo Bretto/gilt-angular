@@ -12,11 +12,20 @@
     }
   }
 
+  #sales-list{
+    //@include perspective( 800px );
+    //@include perspective-origin(50% 50%);
+    li{
+      @include perspective( 800px );
+      @include perspective-origin(50% 50%);
+    }
+  }
+
 
   .sale-popup {
 
     @include transition-property(all);
-    @include transition-duration(.2s);
+    @include transition-duration(.5s);
     @include transition-timing-function(ease-out);
 
     //transition: opacity 1s ease-in;
@@ -53,3 +62,13 @@
   //  padding: 30%;
   //}
 }
+
+//.init-thumb{
+  //-webkit-transform: scale(0);
+  //@include rotateY( 60deg );
+
+  //.thumb{
+  //  @include scale( .5,.5 );
+  //}
+  //@include scale( 0,0 );
+//}

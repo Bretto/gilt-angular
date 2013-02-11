@@ -1,4 +1,4 @@
-<div>
+<div class="thumb-wrap">
     <div class="thumb">
         <a href="#/sale/{{MainModel.saleType}}/product/{{s.sale | cleanURL}}" class="thumbnail">
             <img src="{{s.image_urls.300x184[0].url}}" img-fade-in/>
@@ -8,6 +8,6 @@
             <h5>{{s.name}}</h5>
         </legend>
     </div>
-    <sale-popup ng-show="isOpen"></sale-popup>
+    <!--<sale-popup ng-show="isOpen"></sale-popup>-->
 </div>
 

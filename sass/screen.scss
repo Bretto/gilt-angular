@@ -10,6 +10,7 @@
   color: #ffffff;
   margin-top: 82px;
   min-height: 800px !important;
+  position: relative;
 }
 
 footer{
@@ -22,7 +23,14 @@ footer{
 .viewer{
   opacity: 0;
   display: block;
+  position:absolute ;
 }
+
+
+.thumb-wrap{
+ // opacity: 0;
+}
+
 
 .thumb {
 

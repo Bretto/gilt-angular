@@ -1,62 +1,62 @@
-/* line 8, ../sass/base.scss */
+/* line 8, /Users/separ8/Sites/gilt/sass/base.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 20, ../sass/base.scss */
+/* line 16, /Users/separ8/Sites/gilt/sass/base.scss */
 html, body {
   background-color: #969696;
   height: 100%;
 }
 
-/* line 25, ../sass/base.scss */
+/* line 21, /Users/separ8/Sites/gilt/sass/base.scss */
 img {
   opacity: 0;
   border: null;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* line 31, ../sass/base.scss */
+/* line 27, /Users/separ8/Sites/gilt/sass/base.scss */
 .navbar {
   max-width: 940px;
   margin: auto;
 }
 
-/* line 36, ../sass/base.scss */
+/* line 32, /Users/separ8/Sites/gilt/sass/base.scss */
 .navbar-inner {
   border-radius: 0;
 }
-/* line 39, ../sass/base.scss */
+/* line 35, /Users/separ8/Sites/gilt/sass/base.scss */
 .navbar-inner .container {
   padding-left: 20px;
 }
 
-/* line 45, ../sass/base.scss */
+/* line 41, /Users/separ8/Sites/gilt/sass/base.scss */
 .nav-lev2 {
   background-color: #1c1d22;
 }
 
-/* line 51, ../sass/base.scss */
+/* line 47, /Users/separ8/Sites/gilt/sass/base.scss */
 .thumbnails {
   margin-left: 0px;
   padding-left: 19px;
   padding-bottom: 20px;
 }
-/* line 57, ../sass/base.scss */
+/* line 53, /Users/separ8/Sites/gilt/sass/base.scss */
 .thumbnails > li {
   margin: 0;
   float: left;
 }
 
-/* line 63, ../sass/base.scss */
+/* line 59, /Users/separ8/Sites/gilt/sass/base.scss */
 .thumbnail {
   border: none;
   padding: 0;
 }
 
-/* line 86, ../sass/base.scss */
+/* line 82, /Users/separ8/Sites/gilt/sass/base.scss */
 .arrow-right-w {
   position: absolute;
   width: 0;
@@ -66,7 +66,7 @@ img {
   border-left: 20px solid #ffffff;
 }
 
-/* line 95, ../sass/base.scss */
+/* line 91, /Users/separ8/Sites/gilt/sass/base.scss */
 .arrow-left-w {
   position: absolute;
   width: 0;
@@ -76,7 +76,7 @@ img {
   border-right: 20px solid #ffffff;
 }
 
-/* line 104, ../sass/base.scss */
+/* line 100, /Users/separ8/Sites/gilt/sass/base.scss */
 .arrow-right-b {
   position: absolute;
   width: 0;
@@ -86,7 +86,7 @@ img {
   border-left: 20px solid #1C1D22;
 }
 
-/* line 113, ../sass/base.scss */
+/* line 109, /Users/separ8/Sites/gilt/sass/base.scss */
 .arrow-left-b {
   position: absolute;
   width: 0;
@@ -96,32 +96,45 @@ img {
   border-right: 20px solid #1C1D22;
 }
 
-/* line 3, ../sass/home.scss */
+/* line 3, /Users/separ8/Sites/gilt/sass/home.scss */
 #home article {
   padding: 40px 20px;
 }
 
-/* line 3, ../sass/sales.scss */
+/* line 3, /Users/separ8/Sites/gilt/sass/sales.scss */
 #sales article {
   padding: 20px;
 }
-/* line 9, ../sass/sales.scss */
+/* line 9, /Users/separ8/Sites/gilt/sass/sales.scss */
 #sales section img {
   width: 300px;
   height: 184px;
 }
-/* line 16, ../sass/sales.scss */
+/* line 18, /Users/separ8/Sites/gilt/sass/sales.scss */
+#sales #sales-list li {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+/* line 25, /Users/separ8/Sites/gilt/sass/sales.scss */
 #sales .sale-popup {
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   -webkit-transition-timing-function: ease-out;
   -moz-transition-timing-function: ease-out;
   -ms-transition-timing-function: ease-out;
@@ -134,68 +147,67 @@ img {
   position: absolute;
   width: 370px;
 }
-/* line 30, ../sass/sales.scss */
+/* line 39, /Users/separ8/Sites/gilt/sass/sales.scss */
 #sales .sale-popup header {
   padding: 20px;
   background-color: #1c1d22;
 }
-/* line 34, ../sass/sales.scss */
+/* line 43, /Users/separ8/Sites/gilt/sass/sales.scss */
 #sales .sale-popup header span {
   color: #949494;
 }
-/* line 38, ../sass/sales.scss */
+/* line 47, /Users/separ8/Sites/gilt/sass/sales.scss */
 #sales .sale-popup header .timeago {
   color: #d2d2d2;
 }
-/* line 44, ../sass/sales.scss */
+/* line 53, /Users/separ8/Sites/gilt/sass/sales.scss */
 #sales .sale-popup section {
   padding: 20px;
   background-color: #ffffff;
   color: #1c1d22;
 }
 
-/* line 7, ../sass/products.scss */
+/* line 7, /Users/separ8/Sites/gilt/sass/products.scss */
 #products header img {
   margin-right: 20px;
   width: 744px;
   height: 281px;
 }
-/* line 13, ../sass/products.scss */
+/* line 13, /Users/separ8/Sites/gilt/sass/products.scss */
 #products header .bg-color-c2 {
   background-color: #2a2d34;
   height: 138px;
   padding-left: 20px;
   padding-top: 35px;
 }
-/* line 20, ../sass/products.scss */
+/* line 20, /Users/separ8/Sites/gilt/sass/products.scss */
 #products header .bg-color-c1 {
   height: 143px;
   background-color: #1c1d22;
   padding-left: 20px;
   padding-top: 35px;
 }
-/* line 28, ../sass/products.scss */
+/* line 28, /Users/separ8/Sites/gilt/sass/products.scss */
 #products article {
   padding: 40px 20px;
 }
-/* line 35, ../sass/products.scss */
+/* line 35, /Users/separ8/Sites/gilt/sass/products.scss */
 #products section img {
   width: 300px;
   height: 400px;
 }
 
-/* line 1, ../sass/product.scss */
+/* line 1, /Users/separ8/Sites/gilt/sass/product.scss */
 #product {
-  background-color: #2a2d34;
   padding-bottom: 20px;
 }
-/* line 6, ../sass/product.scss */
+/* line 5, /Users/separ8/Sites/gilt/sass/product.scss */
 #product article {
   padding-top: 0;
   padding-left: 20px;
   padding-bottom: 20px;
 }
-/* line 12, ../sass/product.scss */
+/* line 11, /Users/separ8/Sites/gilt/sass/product.scss */
 #product img {
   margin-left: 20px;
   margin-right: 20px;
@@ -203,12 +215,12 @@ img {
   width: 420px !important;
   height: 560px !important;
 }
-/* line 20, ../sass/product.scss */
+/* line 19, /Users/separ8/Sites/gilt/sass/product.scss */
 #product hr {
   border-top: 1px solid rgba(238, 238, 238, 0.32);
   border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
-/* line 25, ../sass/product.scss */
+/* line 24, /Users/separ8/Sites/gilt/sass/product.scss */
 #product .btn {
   margin-top: 20px;
 }
@@ -219,9 +231,10 @@ img {
   color: #ffffff;
   margin-top: 82px;
   min-height: 800px !important;
+  position: relative;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 footer {
   background-color: #1c1d22;
   height: 50px;
@@ -229,24 +242,25 @@ footer {
   margin: auto;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 .viewer {
   opacity: 0;
   display: block;
+  position: absolute;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .thumb {
   margin: .5px;
   overflow: hidden;
   position: relative;
 }
-/* line 35, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .thumb:hover legend {
   display: block;
   bottom: -1px;
 }
-/* line 42, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .thumb legend {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -267,7 +281,7 @@ footer {
   bottom: -50px;
   position: absolute;
 }
-/* line 53, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .thumb legend h5 {
   position: absolute;
   top: 5px;
@@ -281,7 +295,7 @@ footer {
   margin-left: 10px;
   padding-right: 20px;
 }
-/* line 68, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .thumb legend .gradient {
   opacity: 1;
   width: 100% !important;

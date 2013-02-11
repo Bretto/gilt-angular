@@ -23,6 +23,12 @@ controllers.controller('SalesCtrl', function ($scope, MainModel, $log, $http, $r
 
     $scope.data = data;
 
+
+    $timeout(function () {
+        $('.thumb-wrap').removeClass('init-thumb');
+    }, 2000);
+
+
 });
 
 controllers.controller('ProductsCtrl', function ($scope, $log, $routeParams, GILT, $http, MainModel, data, $timeout){

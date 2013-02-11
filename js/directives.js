@@ -40,11 +40,22 @@ directives.directive('renderComplete', function ($log) {
 //});
 
 directives.directive('imgFadeIn', function ($log, $parse, $timeout) {
+
+    function getRandom(max, min){
+        return Math.floor(Math.random() * (1 + max - min) + min);
+    }
+
+    function test(){
+        $log.info('test');
+    }
+
     function link(scope, element, attr, ctrl) {
 
         element.load(function () {
             $log.info('load')
-            $(this).fadeTo(500,1);
+            //$(this).fadeTo(500,1);
+            TweenMax.fromTo(element, 1, {opacity:0, rotationY:getRandom(360, -360), rotationX:getRandom(360, -360), z:getRandom(0, -1000), ease:Power2.easeOut},
+                {opacity:1, rotationY:0, rotationX:0, z:0, ease:Power2.easeOut, onComplete:test})
         });
     }
 
@@ -72,6 +83,8 @@ directives.directive('mainNav', function ($log, $parse) {
 
 directives.directive('mainContent', function ($log, $parse) {
 
+
+
     function link(scope, elem, attr, ctrl) {
     }
 
@@ -86,7 +99,16 @@ directives.directive('mainContent', function ($log, $parse) {
 
 directives.directive('saleThumb', function ($log, $parse, $timeout) {
 
+    function getRandom(max, min){
+        return Math.floor(Math.random() * (1 + max - min) + min);
+    }
+
     function link(scope, element, attr, ctrl) {
+
+//        $timeout(function(){
+//              TweenMax.fromTo(element, 1, {opacity:0, rotationY:getRandom(360, -360), rotationX:getRandom(360, -360), z:getRandom(0, -1000), ease:Power2.easeOut}, {opacity:1, rotationY:0, rotationX:0, z:0, ease:Power2.easeOut})
+//            }, 100 * scope.$index);
+
 
     }
 
@@ -100,6 +122,8 @@ directives.directive('saleThumb', function ($log, $parse, $timeout) {
 
 
 directives.directive('salePopup', function ($log, $parse, $timeout) {
+
+
 
     function link(scope, element, attr, ctrl) {
 
@@ -365,10 +389,14 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
             function fadeIn(){
                 compileTemplate();
                 templateLoaded = false;
-                element.fadeTo(time, 1, function () {
-                    $log.info('fade-in content');
-                    fadeInComplete();
-                });
+
+                TweenMax.fromTo(element, 1, {opacity:0, left:"+=70px", width:940, ease:Power2.easeOut},
+                    {opacity:1, ease:Power2.easeOut, left:0, onComplete:fadeInComplete});
+
+//                element.fadeTo(time, 1, function () {
+//                    $log.info('fade-in content');
+//                    fadeInComplete();
+//                });
             }
 
             function fadeInComplete() {
@@ -379,9 +407,11 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
 
                 if (element.html() !== ''){
                     state = 'fading-out-template';
-                    element.fadeTo(time,0, function () {
-                        fadeOutComplete();
-                    });
+                    TweenMax.fromTo(element, 1, {opacity:1, ease:Power2.easeOut},
+                        {opacity:0, left:"+=70px", ease:Power2.easeOut, onComplete:fadeOutComplete});
+//                    element.fadeTo(time,0, function () {
+//                        fadeOutComplete();
+//                    });
                 }else{
                     state = 'waiting-for-template';
                 }
