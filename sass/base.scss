@@ -1,8 +1,11 @@
 @import "compass/css3";
 @import "compass/utilities";
 
-$c1: #1C1D22;
-$c2: #2A2D34;
+$c1: #D96666;
+$c2: #D98032;
+$c3: #F2A950;
+$c4: #736C48;
+$page-bg: #2A2D34;
 
 
 *{
@@ -12,9 +15,8 @@ $c2: #2A2D34;
 }
 
 
-
 html, body{
-  background-color: #969696;
+  background-color: $page-bg;
   height: 100%;
 }
 
@@ -24,30 +26,113 @@ img{
   background-color: rgba(255, 255, 255, .2);
 }
 
+h1{
+  font-weight: 200;
+  color: #ffffff;
+  //
+}
+
 .navbar{
-  max-width: 940px;
+  padding-top: 40px;
+  max-width: 906px;
   margin: auto;
+  background-color: $page-bg;
 }
 
 .navbar-inner{
   border-radius: 0;
+  height: 44px;
 
   .container{
     padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.27);
+    margin: 2px;
+    height: 22px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: auto;
+    //
+  }
+
+  .brand{
+    color: #fff;
   }
 
 }
 
 .nav-lev2{
   background-color: $c1;
+}
 
+
+.nav-btn{
+  position: relative;
+  color: #ffffff !important;
+  span{
+    position: absolute;
+    margin: 2px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.nav-btn-1{
+  background-color: $c1;
+
+  &:hover{
+    background-color: $c1 !important;
+  }
+
+}
+
+.nav-btn-2{
+  background-color: $c2;
+
+  &:hover{
+    background-color: $c2 !important;
+  }
+
+}
+
+.nav-btn-3{
+  background-color: $c3;
+
+  &:hover{
+    background-color: $c3 !important;
+  }
+
+}
+
+.nav-btn-4{
+  background-color: $c4;
+
+  &:hover{
+    background-color: $c4 !important;
+  }
+
+}
+
+.sub-menu{
+
+  padding-left: 20px;
+
+}
+
+hr{
+  margin: 0 20px 10px;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.29);
 }
 
 
 .thumbnails{
 
   margin-left: 0px;
-  padding-left: 19px;
+  //padding-left: 19px;
   padding-bottom: 20px;
 
   > li {
@@ -113,4 +198,16 @@ img{
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-right:20px solid #1C1D22;
+}
+
+.extruder-wrap{
+  @include perspective( 800px );
+  @include perspective-origin(50% 50%);
+
+  .extruder{
+    background-color: #595D62;
+    height: 40px;
+    @include rotateX( -60deg );
+    @include transform-origin( 0 0 0 0 );
+  }
 }

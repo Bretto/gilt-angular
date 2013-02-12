@@ -3,15 +3,21 @@
     <header>
         <img src="{{data.image_urls.744x281[0].url}}" class="pull-right"
              img-fade-in/>
-        <div class="bg-color-c2">
-            <p>Begins:</p>
-            <h4 class="timeago" title="{{data.begins | date:medium}}">{{data.begins | date:medium}}</h4>
+        <div class="dates begins">
+            <!--<p>Begins:</p>-->
+            <h4 class="timeago">{{data.begins | date:short}}</h4>
+            <span></span>
         </div>
-        <div class="bg-color-c1">
-            <p>Ends:</p>
-            <h4 class="timeago" title="{{data.ends | date:medium}}">{{data.ends | date:medium}}</h4>
+        <div class="dates ends">
+            <!--<p>Ends:</p>-->
+            <h4 class="timeago">{{data.ends | date:short}}</h4>
+            <span></span>
         </div>
+
     </header>
+    <div class="extruder-wrap">
+        <div class="extruder"></div>
+    </div>
 
     <article>
         <h1>{{data.name}}</h1>

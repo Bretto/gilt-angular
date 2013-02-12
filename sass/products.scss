@@ -5,23 +5,41 @@
   header{
 
     img{
-      margin-right: 20px;
+      //margin-right: 20px;
       width: 744px;
       height: 281px;
+      position: relative;
+      z-index: 1;
+      border-left: 4px solid #000000;
     }
 
-    .bg-color-c2{
-      background-color: $c2;
-      height: 138px;
-      padding-left: 20px;
-      padding-top: 35px;
-    }
+    .dates{
 
-    .bg-color-c1{
-      height: 143px;
-      background-color: $c1;
+      h4{
+        font-weight: 200;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0;
+      }
+
+
+
+      position: relative;
+      background-color: #000000;
+      height: 141px;
       padding-left: 20px;
-      padding-top: 35px;
+      padding-top: 38px;
+
+
+      span{
+        position: absolute;
+        margin: 4px;
+        height: 50%;
+        background-color: rgba(255, 255, 255, 0.3);
+        top: 0;
+        left: 0;
+        right: 0;
+      }
     }
   }
 

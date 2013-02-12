@@ -390,13 +390,9 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
                 compileTemplate();
                 templateLoaded = false;
 
-                TweenMax.fromTo(element, 1, {opacity:0, left:"+=70px", width:940, ease:Power2.easeOut},
+                TweenMax.fromTo(element, 1, {opacity:0, left:"+=70px", width:903, ease:Power2.easeOut},
                     {opacity:1, ease:Power2.easeOut, left:0, onComplete:fadeInComplete});
 
-//                element.fadeTo(time, 1, function () {
-//                    $log.info('fade-in content');
-//                    fadeInComplete();
-//                });
             }
 
             function fadeInComplete() {
@@ -409,9 +405,6 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
                     state = 'fading-out-template';
                     TweenMax.fromTo(element, 1, {opacity:1, ease:Power2.easeOut},
                         {opacity:0, left:"+=70px", ease:Power2.easeOut, onComplete:fadeOutComplete});
-//                    element.fadeTo(time,0, function () {
-//                        fadeOutComplete();
-//                    });
                 }else{
                     state = 'waiting-for-template';
                 }

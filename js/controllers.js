@@ -15,18 +15,19 @@ controllers.controller('MainContentCtrl', function ($scope, $rootScope, $timeout
     $log.info('MainContentCtrl');
 });
 
-controllers.controller('SalesCtrl', function ($scope, MainModel, $log, $http, $routeParams, GILT, $timeout, data){
+controllers.controller('SalesCtrl', function ($scope, MainModel, $log, $http, $routeParams, GILT, $timeout, promiseData){
     $log.info('SalesCtrl');
 
     $scope.MainModel = MainModel;
     MainModel.saleType = $routeParams.type;
 
-    $scope.data = data;
+    $scope.data = promiseData.data;
+    $scope.item = promiseData.item;
 
 
-    $timeout(function () {
-        $('.thumb-wrap').removeClass('init-thumb');
-    }, 2000);
+//    $timeout(function () {
+//        $('.thumb-wrap').removeClass('init-thumb');
+//    }, 2000);
 
 
 });

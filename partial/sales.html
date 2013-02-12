@@ -1,7 +1,24 @@
-<div id="sales" ng-cloak>
+<div id="sales">
+    <header>
+        <img src="{{item.image_urls.744x281[0].url}}" class="pull-right"
+             img-fade-in/>
+        <div class="dates begins">
+            <!--<p>Begins:</p>-->
+            <h4 class="timeago">{{item.begins | date:short}}</h4>
+            <span></span>
+        </div>
+        <div class="dates ends">
+            <!--<p>Ends:</p>-->
+            <h4 class="timeago">{{item.ends | date:short}}</h4>
+            <span></span>
+        </div>
+    </header>
+    <div class="extruder-wrap">
+        <div class="extruder"></div>
+    </div>
     <article>
-        <h1>Sales</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h1>{{item.name}}</h1>
+        <p>{{item.description}}</p>
     </article>
     <section set-height-from="sales-list" ng-cloak>
         <ul id="sales-list" class="thumbnails">

@@ -8,17 +8,34 @@ angular.module('GiltApp', ['GiltApp.filters', 'GiltApp.services', 'GiltApp.direc
         when('/', {templateUrl:'partial/hero.html'}).
         when('/sale/:type', {templateUrl:'partial/sales.html', controller:'SalesCtrl',
             resolve:{
-                data:function ($q, $route, GILT, $http, $log)
+                promiseData:function ($q, $route, GILT, $http, $log)
                 {
                     var deferred = $q.defer();
+                    var promiseData = {};
 
                     var successCb = function (result)
                     {
-                        deferred.resolve(result);
+                        promiseData.data = result;
+                        var index = Math.floor(Math.random()*result.sales.length);
+                        var productURI = result.sales[index].sale + GILT.APIKEY + GILT.CALLBACK;
+                        $http({method:GILT.METHOD, url:productURI}).success(successCb2).error(errorCb2);
+                        //deferred.resolve(promiseData);
                         $log.info(result);
                     };
 
                     var errorCb = function (error)
+                    {
+                        $log.info(error);
+                    };
+
+                    var successCb2 = function (result)
+                    {
+                        promiseData.item = result;
+                        deferred.resolve(promiseData);
+                        $log.info(result);
+                    };
+
+                    var errorCb2 = function (error)
                     {
                         $log.info(error);
                     };
