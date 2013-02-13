@@ -1,42 +1,9 @@
 /* line 7, ../sass/products.scss */
-#products header img {
-  width: 744px;
-  height: 281px;
-  position: relative;
-  z-index: 1;
-  border-left: 4px solid #000000;
-}
-/* line 16, ../sass/products.scss */
-#products header .dates {
-  position: relative;
-  background-color: #000000;
-  height: 141px;
-  padding-left: 20px;
-  padding-top: 38px;
-}
-/* line 18, ../sass/products.scss */
-#products header .dates h4 {
-  font-weight: 200;
-  font-size: 30px;
-  line-height: 37px;
-  margin: 0;
-}
-/* line 34, ../sass/products.scss */
-#products header .dates span {
-  position: absolute;
-  margin: 4px;
-  height: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  top: 0;
-  left: 0;
-  right: 0;
-}
-/* line 46, ../sass/products.scss */
-#products article {
-  padding: 40px 20px;
-}
-/* line 53, ../sass/products.scss */
 #products section img {
   width: 300px;
   height: 400px;
+}
+/* line 13, ../sass/products.scss */
+#products .sold-out {
+  padding-left: 20;
 }

@@ -390,7 +390,7 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
                 compileTemplate();
                 templateLoaded = false;
 
-                TweenMax.fromTo(element, 1, {opacity:0, left:"+=70px", width:903, ease:Power2.easeOut},
+                TweenMax.fromTo(element, 1, {opacity:0, left:"+=70px", width:980, ease:Power2.easeOut},
                     {opacity:1, ease:Power2.easeOut, left:0, onComplete:fadeInComplete});
 
             }
@@ -435,4 +435,19 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
             }
         }
     };
+});
+
+directives.directive('heroShot', function ($log, $parse) {
+
+    function link(scope, elem, attr, ctrl) {
+
+    }
+
+    return {
+        replace:true,
+        scope:{data:"="},
+        restrict:'E',
+        templateUrl:'partial/hero-shot.html',
+        link:link
+    }
 });

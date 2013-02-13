@@ -24,121 +24,18 @@ h1 {
   color: #ffffff;
 }
 
-/* line 35, ../sass/base.scss */
-.navbar {
-  padding-top: 40px;
-  max-width: 906px;
-  margin: auto;
-  background-color: #2a2d34;
-}
-/* line 42, ../sass/base.scss */
-.navbar hr {
-  margin: 0 20px 10px;
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.29);
-}
-
-/* line 49, ../sass/base.scss */
-.navbar-inner {
-  border-radius: 0;
-  height: 44px;
-}
-/* line 53, ../sass/base.scss */
-.navbar-inner .container {
-  padding-left: 20px;
-  background-color: rgba(255, 255, 255, 0.27);
-  margin: 2px;
-  height: 22px;
-  position: absolute;
-  right: 0;
-  left: 0;
-  width: auto;
-}
-/* line 65, ../sass/base.scss */
-.navbar-inner .brand {
-  color: #fff;
-}
-
-/* line 71, ../sass/base.scss */
-.nav-lev2 {
-  background-color: #d96666;
-}
-
-/* line 76, ../sass/base.scss */
-.nav-btn {
-  position: relative;
-  color: #ffffff !important;
-}
-/* line 79, ../sass/base.scss */
-.nav-btn span {
-  position: absolute;
-  margin: 2px;
-  height: 20px;
-  background-color: rgba(255, 255, 255, 0.3);
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-/* line 90, ../sass/base.scss */
-.nav-btn-1 {
-  background-color: #d96666;
-}
-/* line 93, ../sass/base.scss */
-.nav-btn-1:hover {
-  background-color: #d96666 !important;
-}
-
-/* line 99, ../sass/base.scss */
-.nav-btn-2 {
-  background-color: #d98032;
-}
-/* line 102, ../sass/base.scss */
-.nav-btn-2:hover {
-  background-color: #d98032 !important;
-}
-
-/* line 108, ../sass/base.scss */
-.nav-btn-3 {
-  background-color: #f2a950;
-}
-/* line 111, ../sass/base.scss */
-.nav-btn-3:hover {
-  background-color: #f2a950 !important;
-}
-
-/* line 117, ../sass/base.scss */
-.nav-btn-4 {
-  background-color: #736c48;
-}
-/* line 120, ../sass/base.scss */
-.nav-btn-4:hover {
-  background-color: #736c48 !important;
-}
-
-/* line 126, ../sass/base.scss */
-.sub-menu {
-  padding-left: 20px;
-}
-
-/* line 135, ../sass/base.scss */
+/* line 34, ../sass/base.scss */
 .thumbnails {
-  margin-left: 0px;
-  padding-bottom: 20px;
-}
-/* line 141, ../sass/base.scss */
-.thumbnails > li {
-  margin: 0;
-  float: left;
+  margin-left: -16px;
 }
 
-/* line 147, ../sass/base.scss */
-.thumbnail {
-  border: none;
-  padding: 0;
+/* line 38, ../sass/base.scss */
+.thumbnail:hover {
+  border-color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 170, ../sass/base.scss */
+/* line 92, ../sass/base.scss */
 .arrow-right-w {
   position: absolute;
   width: 0;
@@ -148,7 +45,7 @@ h1 {
   border-left: 20px solid #ffffff;
 }
 
-/* line 179, ../sass/base.scss */
+/* line 101, ../sass/base.scss */
 .arrow-left-w {
   position: absolute;
   width: 0;
@@ -158,7 +55,7 @@ h1 {
   border-right: 20px solid #ffffff;
 }
 
-/* line 188, ../sass/base.scss */
+/* line 110, ../sass/base.scss */
 .arrow-right-b {
   position: absolute;
   width: 0;
@@ -168,7 +65,7 @@ h1 {
   border-left: 20px solid #1C1D22;
 }
 
-/* line 197, ../sass/base.scss */
+/* line 119, ../sass/base.scss */
 .arrow-left-b {
   position: absolute;
   width: 0;
@@ -178,87 +75,21 @@ h1 {
   border-right: 20px solid #1C1D22;
 }
 
-/* line 206, ../sass/base.scss */
-.extruder-wrap {
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -ms-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
-  -webkit-perspective-origin: 50% 50%;
-  -moz-perspective-origin: 50% 50%;
-  -ms-perspective-origin: 50% 50%;
-  -o-perspective-origin: 50% 50%;
-  perspective-origin: 50% 50%;
-}
-/* line 210, ../sass/base.scss */
-.extruder-wrap .extruder {
-  background-color: #595D62;
-  height: 40px;
-  -webkit-transform: rotateX(-60deg);
-  -moz-transform: rotateX(-60deg);
-  -ms-transform: rotateX(-60deg);
-  -o-transform: rotateX(-60deg);
-  transform: rotateX(-60deg);
-  -webkit-transform-origin: 0 0 0 0 50%;
-  -moz-transform-origin: 0 0 0 0 50%;
-  -ms-transform-origin: 0 0 0 0 50%;
-  -o-transform-origin: 0 0 0 0 50%;
-  transform-origin: 0 0 0 0 50%;
-}
-
 /* line 3, ../sass/home.scss */
 #home article {
   padding: 40px 20px;
 }
 
-/* line 5, ../sass/sales.scss */
-#sales header img {
-  width: 744px;
-  height: 281px;
-  position: relative;
-  z-index: 1;
-  border-left: 4px solid #000000;
-}
-/* line 14, ../sass/sales.scss */
-#sales header .dates {
-  position: relative;
-  background-color: #000000;
-  height: 141px;
-  padding-left: 20px;
-  padding-top: 38px;
-}
-/* line 16, ../sass/sales.scss */
-#sales header .dates h4 {
-  font-weight: 200;
-  font-size: 30px;
-  line-height: 37px;
-  margin: 0;
-}
-/* line 32, ../sass/sales.scss */
-#sales header .dates span {
-  position: absolute;
-  margin: 4px;
-  height: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  top: 0;
-  left: 0;
-  right: 0;
-}
-/* line 44, ../sass/sales.scss */
-#sales article {
-  padding: 40px 20px;
-}
-/* line 50, ../sass/sales.scss */
+/* line 6, ../sass/sales.scss */
 #sales section img {
   width: 300px;
   height: 184px;
 }
-/* line 56, ../sass/sales.scss */
+/* line 12, ../sass/sales.scss */
 #sales #sales-list {
   padding: 0;
 }
-/* line 61, ../sass/sales.scss */
+/* line 17, ../sass/sales.scss */
 #sales #sales-list li {
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
@@ -271,7 +102,7 @@ h1 {
   -o-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%;
 }
-/* line 68, ../sass/sales.scss */
+/* line 24, ../sass/sales.scss */
 #sales .sale-popup {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -295,20 +126,20 @@ h1 {
   position: absolute;
   width: 370px;
 }
-/* line 82, ../sass/sales.scss */
+/* line 38, ../sass/sales.scss */
 #sales .sale-popup header {
   padding: 20px;
   background-color: #d96666;
 }
-/* line 86, ../sass/sales.scss */
+/* line 42, ../sass/sales.scss */
 #sales .sale-popup header span {
   color: #949494;
 }
-/* line 90, ../sass/sales.scss */
+/* line 46, ../sass/sales.scss */
 #sales .sale-popup header .timeago {
   color: #d2d2d2;
 }
-/* line 96, ../sass/sales.scss */
+/* line 52, ../sass/sales.scss */
 #sales .sale-popup section {
   padding: 20px;
   background-color: #ffffff;
@@ -316,46 +147,13 @@ h1 {
 }
 
 /* line 7, ../sass/products.scss */
-#products header img {
-  width: 744px;
-  height: 281px;
-  position: relative;
-  z-index: 1;
-  border-left: 4px solid #000000;
-}
-/* line 16, ../sass/products.scss */
-#products header .dates {
-  position: relative;
-  background-color: #000000;
-  height: 141px;
-  padding-left: 20px;
-  padding-top: 38px;
-}
-/* line 18, ../sass/products.scss */
-#products header .dates h4 {
-  font-weight: 200;
-  font-size: 30px;
-  line-height: 37px;
-  margin: 0;
-}
-/* line 34, ../sass/products.scss */
-#products header .dates span {
-  position: absolute;
-  margin: 4px;
-  height: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  top: 0;
-  left: 0;
-  right: 0;
-}
-/* line 46, ../sass/products.scss */
-#products article {
-  padding: 40px 20px;
-}
-/* line 53, ../sass/products.scss */
 #products section img {
   width: 300px;
   height: 400px;
+}
+/* line 13, ../sass/products.scss */
+#products .sold-out {
+  padding-left: 20px;
 }
 
 /* line 1, ../sass/product.scss */
@@ -369,33 +167,162 @@ h1 {
   padding-bottom: 20px;
 }
 /* line 11, ../sass/product.scss */
-#product img {
+#product .img-wrap {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+/* line 19, ../sass/product.scss */
+#product img {
   width: 420px !important;
   height: 560px !important;
 }
-/* line 19, ../sass/product.scss */
+/* line 24, ../sass/product.scss */
 #product hr {
   border-top: 1px solid rgba(238, 238, 238, 0.32);
   border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
-/* line 24, ../sass/product.scss */
+/* line 29, ../sass/product.scss */
 #product .btn {
   margin-top: 20px;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 5, ../sass/hero.scss */
+#hero-shot header img {
+  width: 744px;
+  height: 281px;
+  position: relative;
+  z-index: 1;
+  border-left: 4px solid #000000;
+}
+/* line 14, ../sass/hero.scss */
+#hero-shot header .dates {
+  position: relative;
+  background-color: #000000;
+  height: 141px;
+  padding-left: 32px;
+  padding-top: 53px;
+}
+/* line 16, ../sass/hero.scss */
+#hero-shot header .dates h4 {
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 37px;
+  margin: 0;
+}
+/* line 30, ../sass/hero.scss */
+#hero-shot header .dates span {
+  position: absolute;
+  margin: 4px;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 42, ../sass/hero.scss */
+#hero-shot article {
+  padding: 40px 20px;
+}
+
+/* line 3, ../sass/nav.scss */
+#main-nav .navbar {
+  padding-top: 40px;
+  max-width: 980px;
+  margin: auto;
+  background-color: #2a2d34;
+}
+/* line 10, ../sass/nav.scss */
+#main-nav .navbar hr {
+  margin: 0 20px 10px;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.29);
+}
+/* line 17, ../sass/nav.scss */
+#main-nav .navbar-inner {
+  border-radius: 0;
+  height: 44px;
+}
+/* line 21, ../sass/nav.scss */
+#main-nav .navbar-inner .container {
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.27);
+  margin: 2px;
+  height: 22px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: auto;
+}
+/* line 33, ../sass/nav.scss */
+#main-nav .navbar-inner .brand {
+  color: #fff;
+}
+/* line 39, ../sass/nav.scss */
+#main-nav .nav-lev2 {
+  background-color: #d96666;
+}
+/* line 44, ../sass/nav.scss */
+#main-nav .nav-btn {
+  position: relative;
+  color: #ffffff !important;
+}
+/* line 47, ../sass/nav.scss */
+#main-nav .nav-btn span {
+  position: absolute;
+  margin: 2px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 58, ../sass/nav.scss */
+#main-nav .nav-btn-1 {
+  background-color: #d96666;
+}
+/* line 61, ../sass/nav.scss */
+#main-nav .nav-btn-1:hover {
+  background-color: #d96666 !important;
+}
+/* line 67, ../sass/nav.scss */
+#main-nav .nav-btn-2 {
+  background-color: #d98032;
+}
+/* line 70, ../sass/nav.scss */
+#main-nav .nav-btn-2:hover {
+  background-color: #d98032 !important;
+}
+/* line 76, ../sass/nav.scss */
+#main-nav .nav-btn-3 {
+  background-color: #f2a950;
+}
+/* line 79, ../sass/nav.scss */
+#main-nav .nav-btn-3:hover {
+  background-color: #f2a950 !important;
+}
+/* line 85, ../sass/nav.scss */
+#main-nav .nav-btn-4 {
+  background-color: #736c48;
+}
+/* line 88, ../sass/nav.scss */
+#main-nav .nav-btn-4:hover {
+  background-color: #736c48 !important;
+}
+/* line 94, ../sass/nav.scss */
+#main-nav .sub-menu {
+  padding-left: 20px;
+}
+
+/* line 10, ../sass/screen.scss */
 .main-content {
   color: #eeeeee;
   margin-top: 200px;
-  min-height: 800px !important;
   position: relative;
-  width: 900px;
+  width: 980px;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 footer {
   background-color: #d96666;
   height: 50px;
@@ -403,25 +330,54 @@ footer {
   margin: auto;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 .viewer {
   opacity: 0;
   display: block;
   position: absolute;
 }
 
+/* line 32, ../sass/screen.scss */
+.extruder-wrap {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
 /* line 36, ../sass/screen.scss */
+.extruder-wrap .extruder {
+  background-color: #595D62;
+  height: 40px;
+  -webkit-transform: rotateX(-60deg);
+  -moz-transform: rotateX(-60deg);
+  -ms-transform: rotateX(-60deg);
+  -o-transform: rotateX(-60deg);
+  transform: rotateX(-60deg);
+  -webkit-transform-origin: 0 0 0 0 50%;
+  -moz-transform-origin: 0 0 0 0 50%;
+  -ms-transform-origin: 0 0 0 0 50%;
+  -o-transform-origin: 0 0 0 0 50%;
+  transform-origin: 0 0 0 0 50%;
+}
+
+/* line 46, ../sass/screen.scss */
 .thumb {
   margin: .5px;
   overflow: hidden;
   position: relative;
 }
-/* line 44, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .thumb:hover legend {
   display: block;
   bottom: -1px;
 }
-/* line 51, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .thumb legend {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -442,7 +398,7 @@ footer {
   bottom: -50px;
   position: absolute;
 }
-/* line 62, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .thumb legend h5 {
   position: absolute;
   top: 5px;
@@ -456,7 +412,7 @@ footer {
   margin-left: 10px;
   padding-right: 20px;
 }
-/* line 77, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .thumb legend .gradient {
   opacity: 1;
   width: 100% !important;

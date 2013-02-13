@@ -1,0 +1,101 @@
+#main-nav{
+
+  .navbar{
+    padding-top: 40px;
+    max-width: 980px;
+    margin: auto;
+    background-color: $page-bg;
+
+
+    hr{
+      margin: 0 20px 10px;
+      border: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.29);
+    }
+  }
+
+  .navbar-inner{
+    border-radius: 0;
+    height: 44px;
+
+    .container{
+      padding-left: 20px;
+      background-color: rgba(255, 255, 255, 0.27);
+      margin: 2px;
+      height: 22px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      width: auto;
+      //
+    }
+
+    .brand{
+      color: #fff;
+    }
+
+  }
+
+  .nav-lev2{
+    background-color: $c1;
+  }
+
+
+  .nav-btn{
+    position: relative;
+    color: #ffffff !important;
+    span{
+      position: absolute;
+      margin: 2px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.3);
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .nav-btn-1{
+    background-color: $c1;
+
+    &:hover{
+      background-color: $c1 !important;
+    }
+
+  }
+
+  .nav-btn-2{
+    background-color: $c2;
+
+    &:hover{
+      background-color: $c2 !important;
+    }
+
+  }
+
+  .nav-btn-3{
+    background-color: $c3;
+
+    &:hover{
+      background-color: $c3 !important;
+    }
+
+  }
+
+  .nav-btn-4{
+    background-color: $c4;
+
+    &:hover{
+      background-color: $c4 !important;
+    }
+
+  }
+
+  .sub-menu{
+
+    padding-left: 20px;
+
+  }
+
+}
+
