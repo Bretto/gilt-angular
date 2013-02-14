@@ -11,8 +11,6 @@ controllers.controller('MainNavCtrl', function ($scope, $timeout, MainModel, $lo
     $log.info('MainNavCtrl');
     $scope.MainModel = MainModel;
 
-
-
 });
 
 controllers.controller('MainContentCtrl', function ($scope, $rootScope, $timeout, $compile, $log){
@@ -36,15 +34,15 @@ controllers.controller('SalesCtrl', function ($scope, MainModel, $log, $http, $r
 
 });
 
-controllers.controller('ProductsCtrl', function ($scope, $log, $routeParams, GILT, $http, MainModel, data, $timeout){
+controllers.controller('ProductsCtrl', function ($scope, $log, $routeParams, GILT, $http, MainModel, promiseData, $timeout){
     $log.info('ProductsCtrl');
 
     $scope.MainModel = MainModel;
     MainModel.saleType = $routeParams.type;
     MainModel.productURI = $routeParams.uri;
 
-    $scope.data = data;
-    $scope.isSoldOut = (data.products) ? false : true;
+    $scope.data = promiseData.data;
+    $scope.isSoldOut = (promiseData.data.products) ? false : true;
 
 });
 

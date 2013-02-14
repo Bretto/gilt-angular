@@ -49,58 +49,82 @@ footer{
   }
 }
 
-
-
-.thumb {
-
-  margin: .5px;
-  overflow: hidden;
-  position: relative;
+.thumb-wrap{
 
   &:hover {
 
+    .thumb{
+
+      .thumbnail{
+        border-color: $c1;
+
+      }
+
+      legend {
+        display: block;
+        bottom: -1px;
+      }
+    }
+
+    .extruder-wrap{
+      .extruder{
+        background-color: $c1 !important;
+
+      }
+
+    }
+
+
+
+  }
+
+  .thumb {
+
+    margin: .5px;
+    overflow: hidden;
+    position: relative;
+
+
+
     legend {
-      display: block;
-      bottom: -1px;
-    }
 
-  }
+      @include transition-property(all);
+      @include transition-duration(.2s);
+      @include transition-timing-function(ease-out);
 
-  legend {
+      padding: 4px;
 
-    @include transition-property(all);
-    @include transition-duration(.2s);
-    @include transition-timing-function(ease-out);
-
-
-    margin: 0;
-    bottom: -50px;
-    position: absolute;
-
-    h5 {
+      margin: 0;
+      bottom: -55px;
       position: absolute;
-      top: 5px;
-      text-align: center;
-      text-shadow: 0 0 3px rgba(0, 0, 0, .75);
-      color: #ffffff;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      width: 100%;
-      overflow: hidden;
-      margin-left: 10px;
-      padding-right: 20px;
 
-    }
+      h5 {
+        position: absolute;
+        top: 5px;
+        text-align: center;
+        text-shadow: 0 0 3px rgba(0, 0, 0, .75);
+        color: #ffffff;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        margin-left: 10px;
+        padding-right: 20px;
 
-    .gradient {
-      opacity: 1;
-      width: 100% !important;
-      height: 50px !important;
+      }
+
+      .gradient {
+        opacity: 1;
+        width: 100% !important;
+        height: 50px !important;
+      }
+
     }
 
   }
-
 }
+
+
 
 
 

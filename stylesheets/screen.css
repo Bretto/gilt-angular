@@ -29,12 +29,6 @@ h1 {
   margin-left: -16px;
 }
 
-/* line 38, ../sass/base.scss */
-.thumbnail:hover {
-  border-color: #fff !important;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 /* line 92, ../sass/base.scss */
 .arrow-right-w {
   position: absolute;
@@ -428,19 +422,27 @@ footer {
   margin-left: 22px;
 }
 
-/* line 54, ../sass/screen.scss */
-.thumb {
+/* line 58, ../sass/screen.scss */
+.thumb-wrap:hover .thumb .thumbnail {
+  border-color: #d96666;
+}
+/* line 63, ../sass/screen.scss */
+.thumb-wrap:hover .thumb legend {
+  display: block;
+  bottom: -1px;
+}
+/* line 70, ../sass/screen.scss */
+.thumb-wrap:hover .extruder-wrap .extruder {
+  background-color: #d96666 !important;
+}
+/* line 81, ../sass/screen.scss */
+.thumb-wrap .thumb {
   margin: .5px;
   overflow: hidden;
   position: relative;
 }
-/* line 62, ../sass/screen.scss */
-.thumb:hover legend {
-  display: block;
-  bottom: -1px;
-}
-/* line 69, ../sass/screen.scss */
-.thumb legend {
+/* line 89, ../sass/screen.scss */
+.thumb-wrap .thumb legend {
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -ms-transition-property: all;
@@ -456,12 +458,13 @@ footer {
   -ms-transition-timing-function: ease-out;
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+  padding: 4px;
   margin: 0;
-  bottom: -50px;
+  bottom: -55px;
   position: absolute;
 }
-/* line 80, ../sass/screen.scss */
-.thumb legend h5 {
+/* line 101, ../sass/screen.scss */
+.thumb-wrap .thumb legend h5 {
   position: absolute;
   top: 5px;
   text-align: center;
@@ -474,8 +477,8 @@ footer {
   margin-left: 10px;
   padding-right: 20px;
 }
-/* line 95, ../sass/screen.scss */
-.thumb legend .gradient {
+/* line 116, ../sass/screen.scss */
+.thumb-wrap .thumb legend .gradient {
   opacity: 1;
   width: 100% !important;
   height: 50px !important;
