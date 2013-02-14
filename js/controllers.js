@@ -3,12 +3,13 @@
 
 var controllers = angular.module('GiltApp.controllers', []);
 
-controllers.controller('MainCtrl', function ($scope, $rootScope, $timeout, $compile, $log, $http){
+controllers.controller('MainCtrl', function ($scope, $timeout, $log){
     $log.info('MainCtrl');
 });
 
-controllers.controller('MainNavCtrl', function ($scope, $rootScope, $timeout, $compile, $log){
+controllers.controller('MainNavCtrl', function ($scope, $timeout, MainModel, $log){
     $log.info('MainNavCtrl');
+    $scope.MainModel = MainModel;
 });
 
 controllers.controller('MainContentCtrl', function ($scope, $rootScope, $timeout, $compile, $log){

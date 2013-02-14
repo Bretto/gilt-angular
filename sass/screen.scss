@@ -1,10 +1,12 @@
 @import "base.scss";
+@import "mixin.scss";
 @import "home.scss";
 @import "sales.scss";
 @import "products.scss";
 @import "product.scss";
 @import "hero.scss";
 @import "nav.scss";
+
 
 
 .main-content{
@@ -32,12 +34,18 @@ footer{
 .extruder-wrap{
   @include perspective( 800px );
   @include perspective-origin(50% 50%);
+  padding-bottom: 1px;
 
   .extruder{
     background-color: #595D62;
     height: 40px;
     @include rotateX( -60deg );
     @include transform-origin( 0 0 0 0 );
+
+    .navbar-inner{
+      background: none;
+      margin-left: 22px;
+    }
   }
 }
 

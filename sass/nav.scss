@@ -6,7 +6,6 @@
     margin: auto;
     background-color: $page-bg;
 
-
     hr{
       margin: 0 20px 10px;
       border: 0;
@@ -32,6 +31,7 @@
 
     .brand{
       color: #fff;
+      padding: 0 10px;
     }
 
   }
@@ -43,7 +43,13 @@
 
   .nav-btn{
     position: relative;
-    color: #ffffff !important;
+
+    a{
+      color: #ffffff !important;
+    }
+
+    height: 41px;
+
     span{
       position: absolute;
       margin: 2px;
@@ -56,46 +62,105 @@
   }
 
   .nav-btn-1{
-    background-color: $c1;
-
-    &:hover{
-      background-color: $c1 !important;
-    }
-
+    @include nav-hover-color($c1);
   }
 
   .nav-btn-2{
-    background-color: $c2;
-
-    &:hover{
-      background-color: $c2 !important;
-    }
-
+    @include nav-hover-color($c2);
   }
 
   .nav-btn-3{
-    background-color: $c3;
-
-    &:hover{
-      background-color: $c3 !important;
-    }
-
+    @include nav-hover-color($c3);
   }
 
   .nav-btn-4{
-    background-color: $c4;
+    @include nav-hover-color($c4);
+  }
 
-    &:hover{
-      background-color: $c4 !important;
+  .navActive{
+    span{
+      height: auto;
+      bottom: 0;
     }
-
   }
 
   .sub-menu{
-
     padding-left: 20px;
-
   }
 
+  a{
+    padding: 0;
+  }
+
+  li{
+    padding: 10px 20px;
+
+  }
 }
+
+.edge-1{
+  @include edge-hover-color($c1);
+}
+
+.edge-2{
+  @include edge-hover-color($c2);
+}
+
+.edge-3{
+  @include edge-hover-color($c3);
+}
+
+.edge-4{
+  @include edge-hover-color($c4);
+}
+
+.edge-over{
+  opacity: 1;
+}
+
+.edgeActive{
+  opacity: 1;
+}
+
+
+
+
+//@include nav-hover-color($c1);
+//
+//@mixin nav-hover-color($color){
+//  i {
+//    background-color: $color;
+//  }
+//
+//  &:hover {
+//    background-color: $color;
+//    a, h1 {
+//      color: #ffffff;
+//    }
+//  }
+//}
+
+
+//.nav{
+//  .extruder-wrap-nav{
+//    z-index: auto;
+//    position: absolute;
+//    z-index: 1;
+//    left: 0;
+//    top: 42px;
+//    right: 0;
+//
+//    @include perspective( 800px );
+//    @include perspective-origin(490px 50%);
+//    .extruder{
+//      //background-color: $c1;
+//      height: 40px;
+//      @include rotateX( -60deg );
+//      @include transform-origin( 0 0 0 0 );
+//
+//
+//    }
+//  }
+//}
+
 

@@ -232,18 +232,18 @@ h1 {
   margin: auto;
   background-color: #2a2d34;
 }
-/* line 10, ../sass/nav.scss */
+/* line 9, ../sass/nav.scss */
 #main-nav .navbar hr {
   margin: 0 20px 10px;
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.29);
 }
-/* line 17, ../sass/nav.scss */
+/* line 16, ../sass/nav.scss */
 #main-nav .navbar-inner {
   border-radius: 0;
   height: 44px;
 }
-/* line 21, ../sass/nav.scss */
+/* line 20, ../sass/nav.scss */
 #main-nav .navbar-inner .container {
   padding-left: 20px;
   background-color: rgba(255, 255, 255, 0.27);
@@ -254,9 +254,10 @@ h1 {
   left: 0;
   width: auto;
 }
-/* line 33, ../sass/nav.scss */
+/* line 32, ../sass/nav.scss */
 #main-nav .navbar-inner .brand {
   color: #fff;
+  padding: 0 10px;
 }
 /* line 39, ../sass/nav.scss */
 #main-nav .nav-lev2 {
@@ -265,9 +266,13 @@ h1 {
 /* line 44, ../sass/nav.scss */
 #main-nav .nav-btn {
   position: relative;
-  color: #ffffff !important;
+  height: 41px;
 }
 /* line 47, ../sass/nav.scss */
+#main-nav .nav-btn a {
+  color: #ffffff !important;
+}
+/* line 53, ../sass/nav.scss */
 #main-nav .nav-btn span {
   position: absolute;
   margin: 2px;
@@ -277,44 +282,95 @@ h1 {
   left: 0;
   right: 0;
 }
-/* line 58, ../sass/nav.scss */
+/* line 64, ../sass/nav.scss */
 #main-nav .nav-btn-1 {
   background-color: #d96666;
 }
-/* line 61, ../sass/nav.scss */
-#main-nav .nav-btn-1:hover {
-  background-color: #d96666 !important;
+/* line 4, ../sass/mixin.scss */
+#main-nav .nav-btn-1:hover span {
+  height: auto;
+  bottom: 0;
 }
-/* line 67, ../sass/nav.scss */
+/* line 68, ../sass/nav.scss */
 #main-nav .nav-btn-2 {
   background-color: #d98032;
 }
-/* line 70, ../sass/nav.scss */
-#main-nav .nav-btn-2:hover {
-  background-color: #d98032 !important;
+/* line 4, ../sass/mixin.scss */
+#main-nav .nav-btn-2:hover span {
+  height: auto;
+  bottom: 0;
 }
-/* line 76, ../sass/nav.scss */
+/* line 72, ../sass/nav.scss */
 #main-nav .nav-btn-3 {
   background-color: #f2a950;
 }
-/* line 79, ../sass/nav.scss */
-#main-nav .nav-btn-3:hover {
-  background-color: #f2a950 !important;
+/* line 4, ../sass/mixin.scss */
+#main-nav .nav-btn-3:hover span {
+  height: auto;
+  bottom: 0;
 }
-/* line 85, ../sass/nav.scss */
+/* line 76, ../sass/nav.scss */
 #main-nav .nav-btn-4 {
   background-color: #736c48;
 }
-/* line 88, ../sass/nav.scss */
-#main-nav .nav-btn-4:hover {
-  background-color: #736c48 !important;
+/* line 4, ../sass/mixin.scss */
+#main-nav .nav-btn-4:hover span {
+  height: auto;
+  bottom: 0;
 }
-/* line 94, ../sass/nav.scss */
+/* line 81, ../sass/nav.scss */
+#main-nav .navActive span {
+  height: auto;
+  bottom: 0;
+}
+/* line 87, ../sass/nav.scss */
 #main-nav .sub-menu {
   padding-left: 20px;
 }
+/* line 91, ../sass/nav.scss */
+#main-nav a {
+  padding: 0;
+}
+/* line 95, ../sass/nav.scss */
+#main-nav li {
+  padding: 10px 20px;
+}
 
-/* line 10, ../sass/screen.scss */
+/* line 101, ../sass/nav.scss */
+.edge-1 {
+  background-color: #d96666;
+  opacity: 0;
+}
+
+/* line 105, ../sass/nav.scss */
+.edge-2 {
+  background-color: #d98032;
+  opacity: 0;
+}
+
+/* line 109, ../sass/nav.scss */
+.edge-3 {
+  background-color: #f2a950;
+  opacity: 0;
+}
+
+/* line 113, ../sass/nav.scss */
+.edge-4 {
+  background-color: #736c48;
+  opacity: 0;
+}
+
+/* line 117, ../sass/nav.scss */
+.edge-over {
+  opacity: 1;
+}
+
+/* line 121, ../sass/nav.scss */
+.edgeActive {
+  opacity: 1;
+}
+
+/* line 12, ../sass/screen.scss */
 .main-content {
   color: #eeeeee;
   margin-top: 200px;
@@ -322,7 +378,7 @@ h1 {
   width: 980px;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 footer {
   background-color: #d96666;
   height: 50px;
@@ -330,14 +386,14 @@ footer {
   margin: auto;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 .viewer {
   opacity: 0;
   display: block;
   position: absolute;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .extruder-wrap {
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
@@ -349,8 +405,9 @@ footer {
   -ms-perspective-origin: 50% 50%;
   -o-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%;
+  padding-bottom: 1px;
 }
-/* line 36, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .extruder-wrap .extruder {
   background-color: #595D62;
   height: 40px;
@@ -365,19 +422,24 @@ footer {
   -o-transform-origin: 0 0 0 0 50%;
   transform-origin: 0 0 0 0 50%;
 }
+/* line 45, ../sass/screen.scss */
+.extruder-wrap .extruder .navbar-inner {
+  background: none;
+  margin-left: 22px;
+}
 
-/* line 46, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .thumb {
   margin: .5px;
   overflow: hidden;
   position: relative;
 }
-/* line 54, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .thumb:hover legend {
   display: block;
   bottom: -1px;
 }
-/* line 61, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .thumb legend {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -398,7 +460,7 @@ footer {
   bottom: -50px;
   position: absolute;
 }
-/* line 72, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .thumb legend h5 {
   position: absolute;
   top: 5px;
@@ -412,7 +474,7 @@ footer {
   margin-left: 10px;
   padding-right: 20px;
 }
-/* line 87, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .thumb legend .gradient {
   opacity: 1;
   width: 100% !important;

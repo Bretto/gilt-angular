@@ -45,9 +45,6 @@ directives.directive('imgFadeIn', function ($log, $parse, $timeout) {
         return Math.floor(Math.random() * (1 + max - min) + min);
     }
 
-    function test(){
-        $log.info('test');
-    }
 
     function link(scope, element, attr, ctrl) {
 
@@ -55,7 +52,7 @@ directives.directive('imgFadeIn', function ($log, $parse, $timeout) {
             $log.info('load')
             //$(this).fadeTo(500,1);
             TweenMax.fromTo(element, 1, {opacity:0, rotationY:getRandom(360, -360), rotationX:getRandom(360, -360), z:getRandom(0, -1000), ease:Power2.easeOut},
-                {opacity:1, rotationY:0, rotationX:0, z:0, ease:Power2.easeOut, onComplete:test})
+                {opacity:1, rotationY:0, rotationX:0, z:0, ease:Power2.easeOut})
         });
     }
 
@@ -66,36 +63,7 @@ directives.directive('imgFadeIn', function ($log, $parse, $timeout) {
 });
 
 
-directives.directive('mainNav', function ($log, $parse) {
 
-    function link(scope, elem, attr, ctrl) {
-
-    }
-
-    return {
-        replace:true,
-        restrict:'E',
-        scope:{},
-        templateUrl:'partial/main-nav.html',
-        link:link
-    }
-});
-
-directives.directive('mainContent', function ($log, $parse) {
-
-
-
-    function link(scope, elem, attr, ctrl) {
-    }
-
-    return {
-        replace:true,
-        restrict:'E',
-        scope:{},
-        templateUrl:'partial/main-content.html',
-        link:link
-    }
-});
 
 directives.directive('saleThumb', function ($log, $parse, $timeout) {
 

@@ -16,13 +16,21 @@ services.constant('GILT', {
 
 services.factory('MainModel', function ($http, $log, $rootScope, $routeParams, $location) {
 
-    var MainModel = {
+    var mainModel = {
          saleType: ''
         ,productURI: ''
         ,productID: ''
     };
 
-    return MainModel;
+    mainModel.isNavActive = function (value){
+        return (value === mainModel.saleType)? true : false;
+    }
+
+    mainModel.isEdgeActive = function (value){
+        return (value === mainModel.saleType)? true : false;
+    }
+
+    return mainModel;
 });
 
 

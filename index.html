@@ -8,16 +8,17 @@
     <meta name="author" content="">
 
     <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon" />
-
-    <!-- Le styles -->
     <link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="stylesheets/screen.css" rel="stylesheet">
 
 </head>
 
 <body ng-controller="MainCtrl">
-<main-nav ng-controller="MainNavCtrl"></main-nav>
-<main-content ng-controller="MainContentCtrl"></main-content>
+<div ng-include="'partial/main-nav.html'" ng-controller="MainNavCtrl"></div>
+<div class="container main-content" ng-controller="MainContentCtrl">
+    <test-view class="viewer"></test-view>
+    <!--<ng-view></ng-view>-->
+</div>
 <!--<footer></footer>-->
 
 
