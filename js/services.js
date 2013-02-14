@@ -23,11 +23,11 @@ services.factory('MainModel', function ($http, $log, $rootScope, $routeParams, $
     };
 
     mainModel.isNavActive = function (value){
-        return (value === mainModel.saleType)? true : false;
+        return (value === mainModel.saleType)? 'navActive' : '';
     }
 
     mainModel.isEdgeActive = function (value){
-        return (value === mainModel.saleType)? true : false;
+        return (value === mainModel.saleType)? 'edgeActive' : '';
     }
 
     return mainModel;

@@ -10,6 +10,9 @@ controllers.controller('MainCtrl', function ($scope, $timeout, $log){
 controllers.controller('MainNavCtrl', function ($scope, $timeout, MainModel, $log){
     $log.info('MainNavCtrl');
     $scope.MainModel = MainModel;
+
+
+
 });
 
 controllers.controller('MainContentCtrl', function ($scope, $rootScope, $timeout, $compile, $log){

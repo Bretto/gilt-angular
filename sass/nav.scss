@@ -19,14 +19,13 @@
 
     .container{
       padding-left: 20px;
-      background-color: rgba(255, 255, 255, 0.27);
+      background-color: rgba(255, 255, 255, 0.1);
       margin: 2px;
       height: 22px;
       position: absolute;
       right: 0;
       left: 0;
       width: auto;
-      //
     }
 
     .brand{
@@ -58,6 +57,7 @@
       top: 0;
       left: 0;
       right: 0;
+
     }
   }
 
@@ -114,7 +114,7 @@
   @include edge-hover-color($c4);
 }
 
-.edge-over{
+.edgeOver{
   opacity: 1;
 }
 

@@ -215,7 +215,7 @@ h1 {
   position: absolute;
   margin: 4px;
   height: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
   top: 0;
   left: 0;
   right: 0;
@@ -246,7 +246,7 @@ h1 {
 /* line 20, ../sass/nav.scss */
 #main-nav .navbar-inner .container {
   padding-left: 20px;
-  background-color: rgba(255, 255, 255, 0.27);
+  background-color: rgba(255, 255, 255, 0.1);
   margin: 2px;
   height: 22px;
   position: absolute;
@@ -254,25 +254,25 @@ h1 {
   left: 0;
   width: auto;
 }
-/* line 32, ../sass/nav.scss */
+/* line 31, ../sass/nav.scss */
 #main-nav .navbar-inner .brand {
   color: #fff;
   padding: 0 10px;
 }
-/* line 39, ../sass/nav.scss */
+/* line 38, ../sass/nav.scss */
 #main-nav .nav-lev2 {
   background-color: #d96666;
 }
-/* line 44, ../sass/nav.scss */
+/* line 43, ../sass/nav.scss */
 #main-nav .nav-btn {
   position: relative;
   height: 41px;
 }
-/* line 47, ../sass/nav.scss */
+/* line 46, ../sass/nav.scss */
 #main-nav .nav-btn a {
   color: #ffffff !important;
 }
-/* line 53, ../sass/nav.scss */
+/* line 52, ../sass/nav.scss */
 #main-nav .nav-btn span {
   position: absolute;
   margin: 2px;
@@ -361,7 +361,7 @@ h1 {
 }
 
 /* line 117, ../sass/nav.scss */
-.edge-over {
+.edgeOver {
   opacity: 1;
 }
 

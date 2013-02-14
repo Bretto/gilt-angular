@@ -4,16 +4,16 @@
             <div class="container">
                 <ul class="nav">
                     <li><a class="brand" href="#/">Gilt</a></li>
-                    <li class="nav-btn nav-btn-1" ng-class="{navActive: MainModel.isNavActive('women')}"><a href="#/sale/women">Women<span></span></a>
+                    <li class="nav-btn nav-btn-1" ng-class="MainModel.isNavActive('women')"><a href="#/sale/women">Women<span></span></a>
 
                     </li>
-                    <li class="nav-btn nav-btn-2" ng-class="{navActive: MainModel.isNavActive('men')}"><a href="#/sale/men">Men<span></span></a>
+                    <li class="nav-btn nav-btn-2" ng-class="MainModel.isNavActive('men')"><a href="#/sale/men">Men<span></span></a>
 
                     </li>
-                    <li class="nav-btn nav-btn-3" ng-class="{navActive: MainModel.isNavActive('kids')}"><a href="#/sale/kids">Kids & Babies<span></span></a>
+                    <li class="nav-btn nav-btn-3" ng-class="MainModel.isNavActive('kids')"><a href="#/sale/kids">Kids & Babies<span></span></a>
 
                     </li>
-                    <li class="nav-btn nav-btn-4" ng-class="{navActive: MainModel.isNavActive('home')}"><a href="#/sale/home">Home<span></span></a>
+                    <li class="nav-btn nav-btn-4" ng-class="MainModel.isNavActive('home')"><a href="#/sale/home">Home<span></span></a>
 
                     </li>
                 </ul>
@@ -25,10 +25,10 @@
                     <div>
                         <ul class="nav">
                             <li class="nav-btn"><a class="brand invisible">Gilt</a></li>
-                            <li class="nav-btn edge-1" ng-class="{edgeActive: MainModel.isEdgeActive('women')}"><div class="invisible">Women</div></li>
-                            <li class="nav-btn edge-2" ng-class="{edgeActive: MainModel.isEdgeActive('men')}"><div class="invisible">Men</div></li>
-                            <li class="nav-btn edge-3" ng-class="{edgeActive: MainModel.isEdgeActive('kids')}"><div class="invisible">Kids & Babies</div></li>
-                            <li class="nav-btn edge-4" ng-class="{edgeActive: MainModel.isEdgeActive('home')}"><div class="invisible">Home</div></li>
+                            <li class="nav-btn edge-1" ng-class="MainModel.isEdgeActive('women')" is-mouse-over=".nav-btn-1"><div class="invisible">Women</div></li>
+                            <li class="nav-btn edge-2" ng-class="MainModel.isEdgeActive('men')" is-mouse-over=".nav-btn-2"><div class="invisible">Men</div></li>
+                            <li class="nav-btn edge-3" ng-class="MainModel.isEdgeActive('kids')" is-mouse-over=".nav-btn-3"><div class="invisible">Kids & Babies</div></li>
+                            <li class="nav-btn edge-4" ng-class="MainModel.isEdgeActive('home')" is-mouse-over=".nav-btn-4"><div class="invisible">Home</div></li>
                         </ul>
                     </div>
                 </div>

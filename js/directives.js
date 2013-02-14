@@ -41,7 +41,7 @@ directives.directive('renderComplete', function ($log) {
 
 directives.directive('imgFadeIn', function ($log, $parse, $timeout) {
 
-    function getRandom(max, min){
+    function getRandom(max, min) {
         return Math.floor(Math.random() * (1 + max - min) + min);
     }
 
@@ -63,11 +63,9 @@ directives.directive('imgFadeIn', function ($log, $parse, $timeout) {
 });
 
 
-
-
 directives.directive('saleThumb', function ($log, $parse, $timeout) {
 
-    function getRandom(max, min){
+    function getRandom(max, min) {
         return Math.floor(Math.random() * (1 + max - min) + min);
     }
 
@@ -90,7 +88,6 @@ directives.directive('saleThumb', function ($log, $parse, $timeout) {
 
 
 directives.directive('salePopup', function ($log, $parse, $timeout) {
-
 
 
     function link(scope, element, attr, ctrl) {
@@ -327,7 +324,7 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
                 destroyLastScope();
             }
 
-            function compileTemplate(){
+            function compileTemplate() {
                 element.html(template);
                 destroyLastScope();
 
@@ -346,15 +343,15 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
                 lastScope.$emit('$viewContentLoaded');
                 lastScope.$eval(onloadExp);
 
-                $timeout(function(){
+                $timeout(function () {
                     lastScope.$digest();
-                },0 );
+                }, 0);
 
                 // $anchorScroll might listen on event...
                 $anchorScroll();
             }
 
-            function fadeIn(){
+            function fadeIn() {
                 compileTemplate();
                 templateLoaded = false;
 
@@ -367,13 +364,13 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
                 $log.info('fade-in content complete');
             }
 
-            function fadeOut(){
+            function fadeOut() {
 
-                if (element.html() !== ''){
+                if (element.html() !== '') {
                     state = 'fading-out-template';
                     TweenMax.fromTo(element, 1, {opacity:1, ease:Power2.easeOut},
                         {opacity:0, left:"+=70px", ease:Power2.easeOut, onComplete:fadeOutComplete});
-                }else{
+                } else {
                     state = 'waiting-for-template';
                 }
             }
@@ -381,7 +378,7 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
             function fadeOutComplete() {
                 clearContent();
                 state = 'waiting-for-template';
-                if(templateLoaded){
+                if (templateLoaded) {
                     fadeIn();
                 }
             }
@@ -396,7 +393,7 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
 
                     $log.info('Content Loaded');
 
-                    if(state === 'fading-out-template') return;
+                    if (state === 'fading-out-template') return;
 
                     fadeIn();
                 }
@@ -416,6 +413,29 @@ directives.directive('heroShot', function ($log, $parse) {
         scope:{data:"="},
         restrict:'E',
         templateUrl:'partial/hero-shot.html',
+        link:link
+    }
+});
+
+directives.directive('isMouseOver', function ($log, $parse) {
+
+    function link(scope, elem, attr, ctrl) {
+
+        var target = $(attr.isMouseOver)[0];
+
+        $(target).mouseover(function (event) {
+            elem.addClass('edgeOver');
+        });
+
+        $(target).mouseleave(function (event) {
+            elem.removeClass('edgeOver');
+        });
+    }
+
+
+    return {
+
+        restrict:'A',
         link:link
     }
 });
