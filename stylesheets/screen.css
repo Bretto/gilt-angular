@@ -181,7 +181,27 @@ h1 {
   margin-top: 20px;
 }
 
-/* line 5, ../sass/hero.scss */
+/* line 6, ../sass/hero.scss */
+#hero-shot .hero-wrap:hover .extruder-wrap .extruder-women {
+  background-color: #d96666 !important;
+}
+/* line 9, ../sass/hero.scss */
+#hero-shot .hero-wrap:hover .extruder-wrap .extruder-men {
+  background-color: #d98032 !important;
+}
+/* line 12, ../sass/hero.scss */
+#hero-shot .hero-wrap:hover .extruder-wrap .extruder-kids {
+  background-color: #f2a950 !important;
+}
+/* line 15, ../sass/hero.scss */
+#hero-shot .hero-wrap:hover .extruder-wrap .extruder-home {
+  background-color: #736c48 !important;
+}
+/* line 23, ../sass/hero.scss */
+#hero-shot a {
+  text-decoration: none;
+}
+/* line 29, ../sass/hero.scss */
 #hero-shot header img {
   width: 744px;
   height: 281px;
@@ -189,7 +209,7 @@ h1 {
   z-index: 1;
   border-left: 4px solid #000000;
 }
-/* line 14, ../sass/hero.scss */
+/* line 38, ../sass/hero.scss */
 #hero-shot header .dates {
   position: relative;
   background-color: #000000;
@@ -197,14 +217,15 @@ h1 {
   padding-left: 32px;
   padding-top: 53px;
 }
-/* line 16, ../sass/hero.scss */
+/* line 40, ../sass/hero.scss */
 #hero-shot header .dates h4 {
   font-weight: 200;
   font-size: 30px;
   line-height: 37px;
   margin: 0;
+  color: #ffffff;
 }
-/* line 30, ../sass/hero.scss */
+/* line 55, ../sass/hero.scss */
 #hero-shot header .dates span {
   position: absolute;
   margin: 4px;
@@ -214,30 +235,39 @@ h1 {
   left: 0;
   right: 0;
 }
-/* line 42, ../sass/hero.scss */
+/* line 67, ../sass/hero.scss */
 #hero-shot article {
   padding: 40px 20px;
 }
 
-/* line 3, ../sass/nav.scss */
+/* line 1, ../sass/nav.scss */
+#main-nav {
+  height: 176px;
+  background-color: #2a2d34;
+  position: fixed;
+  z-index: 1030;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+/* line 11, ../sass/nav.scss */
 #main-nav .navbar {
   padding-top: 40px;
   max-width: 980px;
   margin: auto;
-  background-color: #2a2d34;
 }
-/* line 9, ../sass/nav.scss */
+/* line 17, ../sass/nav.scss */
 #main-nav .navbar hr {
   margin: 0 20px 10px;
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.29);
 }
-/* line 16, ../sass/nav.scss */
+/* line 24, ../sass/nav.scss */
 #main-nav .navbar-inner {
   border-radius: 0;
   height: 44px;
 }
-/* line 20, ../sass/nav.scss */
+/* line 28, ../sass/nav.scss */
 #main-nav .navbar-inner .container {
   padding-left: 20px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -248,25 +278,25 @@ h1 {
   left: 0;
   width: auto;
 }
-/* line 31, ../sass/nav.scss */
+/* line 39, ../sass/nav.scss */
 #main-nav .navbar-inner .brand {
   color: #fff;
   padding: 0 10px;
 }
-/* line 38, ../sass/nav.scss */
+/* line 46, ../sass/nav.scss */
 #main-nav .nav-lev2 {
   background-color: #d96666;
 }
-/* line 43, ../sass/nav.scss */
+/* line 51, ../sass/nav.scss */
 #main-nav .nav-btn {
   position: relative;
   height: 41px;
 }
-/* line 46, ../sass/nav.scss */
+/* line 54, ../sass/nav.scss */
 #main-nav .nav-btn a {
   color: #ffffff !important;
 }
-/* line 52, ../sass/nav.scss */
+/* line 60, ../sass/nav.scss */
 #main-nav .nav-btn span {
   position: absolute;
   margin: 2px;
@@ -276,7 +306,7 @@ h1 {
   left: 0;
   right: 0;
 }
-/* line 64, ../sass/nav.scss */
+/* line 72, ../sass/nav.scss */
 #main-nav .nav-btn-1 {
   background-color: #d96666;
 }
@@ -285,7 +315,7 @@ h1 {
   height: auto;
   bottom: 0;
 }
-/* line 68, ../sass/nav.scss */
+/* line 76, ../sass/nav.scss */
 #main-nav .nav-btn-2 {
   background-color: #d98032;
 }
@@ -294,7 +324,7 @@ h1 {
   height: auto;
   bottom: 0;
 }
-/* line 72, ../sass/nav.scss */
+/* line 80, ../sass/nav.scss */
 #main-nav .nav-btn-3 {
   background-color: #f2a950;
 }
@@ -303,7 +333,7 @@ h1 {
   height: auto;
   bottom: 0;
 }
-/* line 76, ../sass/nav.scss */
+/* line 84, ../sass/nav.scss */
 #main-nav .nav-btn-4 {
   background-color: #736c48;
 }
@@ -312,59 +342,59 @@ h1 {
   height: auto;
   bottom: 0;
 }
-/* line 81, ../sass/nav.scss */
-#main-nav .navActive span {
+/* line 89, ../sass/nav.scss */
+#main-nav .nav-active span {
   height: auto;
   bottom: 0;
 }
-/* line 87, ../sass/nav.scss */
+/* line 95, ../sass/nav.scss */
 #main-nav .sub-menu {
   padding-left: 20px;
 }
-/* line 91, ../sass/nav.scss */
+/* line 99, ../sass/nav.scss */
 #main-nav a {
   padding: 0;
 }
-/* line 95, ../sass/nav.scss */
+/* line 103, ../sass/nav.scss */
 #main-nav li {
   padding: 10px 20px;
 }
 
-/* line 101, ../sass/nav.scss */
+/* line 109, ../sass/nav.scss */
 .edge-1 {
   background-color: #d96666;
   opacity: 0;
 }
 
-/* line 105, ../sass/nav.scss */
+/* line 113, ../sass/nav.scss */
 .edge-2 {
   background-color: #d98032;
   opacity: 0;
 }
 
-/* line 109, ../sass/nav.scss */
+/* line 117, ../sass/nav.scss */
 .edge-3 {
   background-color: #f2a950;
   opacity: 0;
 }
 
-/* line 113, ../sass/nav.scss */
+/* line 121, ../sass/nav.scss */
 .edge-4 {
   background-color: #736c48;
   opacity: 0;
 }
 
-/* line 117, ../sass/nav.scss */
-.edgeOver {
+/* line 125, ../sass/nav.scss */
+.edge-over {
   opacity: 1;
 }
 
-/* line 121, ../sass/nav.scss */
-.edgeActive {
+/* line 129, ../sass/nav.scss */
+.edge-active {
   opacity: 1;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 .main-content {
   color: #eeeeee;
   margin-top: 200px;
@@ -372,7 +402,7 @@ h1 {
   width: 980px;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 footer {
   background-color: #d96666;
   height: 50px;
@@ -380,68 +410,57 @@ footer {
   margin: auto;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 .viewer {
   opacity: 0;
   display: block;
   position: absolute;
 }
 
-/* line 34, ../sass/screen.scss */
-.extruder-wrap {
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -ms-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
-  -webkit-perspective-origin: 50% 50%;
-  -moz-perspective-origin: 50% 50%;
-  -ms-perspective-origin: 50% 50%;
-  -o-perspective-origin: 50% 50%;
-  perspective-origin: 50% 50%;
-  padding-bottom: 1px;
-}
-/* line 39, ../sass/screen.scss */
-.extruder-wrap .extruder {
-  background-color: #595D62;
-  height: 40px;
-  -webkit-transform: rotateX(-60deg);
-  -moz-transform: rotateX(-60deg);
-  -ms-transform: rotateX(-60deg);
-  -o-transform: rotateX(-60deg);
-  transform: rotateX(-60deg);
-  -webkit-transform-origin: 0 0 0 0 50%;
-  -moz-transform-origin: 0 0 0 0 50%;
-  -ms-transform-origin: 0 0 0 0 50%;
-  -o-transform-origin: 0 0 0 0 50%;
-  transform-origin: 0 0 0 0 50%;
-}
-/* line 45, ../sass/screen.scss */
-.extruder-wrap .extruder .navbar-inner {
-  background: none;
-  margin-left: 22px;
-}
-
-/* line 58, ../sass/screen.scss */
-.thumb-wrap:hover .thumb .thumbnail {
+/* line 40, ../sass/screen.scss */
+.thumb-wrap:hover .thumb .thumbnail-women {
   border-color: #d96666;
 }
-/* line 63, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
+.thumb-wrap:hover .thumb .thumbnail-men {
+  border-color: #d98032;
+}
+/* line 48, ../sass/screen.scss */
+.thumb-wrap:hover .thumb .thumbnail-kids {
+  border-color: #f2a950;
+}
+/* line 52, ../sass/screen.scss */
+.thumb-wrap:hover .thumb .thumbnail-home {
+  border-color: #736c48;
+}
+/* line 56, ../sass/screen.scss */
 .thumb-wrap:hover .thumb legend {
   display: block;
   bottom: -1px;
 }
-/* line 70, ../sass/screen.scss */
-.thumb-wrap:hover .extruder-wrap .extruder {
+/* line 63, ../sass/screen.scss */
+.thumb-wrap:hover .extruder-wrap .extruder-women {
   background-color: #d96666 !important;
 }
-/* line 81, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
+.thumb-wrap:hover .extruder-wrap .extruder-men {
+  background-color: #d98032 !important;
+}
+/* line 69, ../sass/screen.scss */
+.thumb-wrap:hover .extruder-wrap .extruder-kids {
+  background-color: #f2a950 !important;
+}
+/* line 72, ../sass/screen.scss */
+.thumb-wrap:hover .extruder-wrap .extruder-home {
+  background-color: #736c48 !important;
+}
+/* line 78, ../sass/screen.scss */
 .thumb-wrap .thumb {
   margin: .5px;
   overflow: hidden;
   position: relative;
 }
-/* line 89, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .thumb-wrap .thumb legend {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -463,7 +482,7 @@ footer {
   bottom: -55px;
   position: absolute;
 }
-/* line 101, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .thumb-wrap .thumb legend h5 {
   position: absolute;
   top: 5px;
@@ -477,9 +496,44 @@ footer {
   margin-left: 10px;
   padding-right: 20px;
 }
-/* line 116, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .thumb-wrap .thumb legend .gradient {
   opacity: 1;
   width: 100% !important;
   height: 50px !important;
+}
+
+/* line 122, ../sass/screen.scss */
+.extruder-wrap {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  padding-bottom: 1px;
+}
+/* line 127, ../sass/screen.scss */
+.extruder-wrap .extruder {
+  background-color: #595D62;
+  height: 40px;
+  -webkit-transform: rotateX(-60deg);
+  -moz-transform: rotateX(-60deg);
+  -ms-transform: rotateX(-60deg);
+  -o-transform: rotateX(-60deg);
+  transform: rotateX(-60deg);
+  -webkit-transform-origin: 0 0 0 0 50%;
+  -moz-transform-origin: 0 0 0 0 50%;
+  -ms-transform-origin: 0 0 0 0 50%;
+  -o-transform-origin: 0 0 0 0 50%;
+  transform-origin: 0 0 0 0 50%;
+}
+/* line 133, ../sass/screen.scss */
+.extruder-wrap .extruder .navbar-inner {
+  background: none;
+  margin-left: 22px;
 }

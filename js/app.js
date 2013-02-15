@@ -3,7 +3,7 @@
 angular.module('GiltApp', ['GiltApp.filters', 'GiltApp.services', 'GiltApp.directives', 'GiltApp.controllers']).
     config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
-        when('/', {templateUrl:'partial/hero.html'}).
+        when('/', {templateUrl:'partial/home.html'}).
         when('/sale/:type', {templateUrl:'partial/sales.html', controller:'SalesCtrl',
             resolve:{
                 promiseData: salePromise
@@ -44,8 +44,6 @@ var productPromise = function($q, $route, GILT, $http, $log){
     var uri = $route.current.params.uri.replace(/_/g,'/');
     var productURI = GILT.API + uri + GILT.APIKEY + GILT.CALLBACK;
     $http({method:GILT.METHOD, url:productURI}).success(successCb).error(errorCb)
-
-
 
     return deferred.promise;
 }

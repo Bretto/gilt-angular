@@ -1,14 +1,16 @@
-<li>
+<li class="thumb-wrap">
+    <a href="#/sale/{{MainModel.saleType}}/product/{{MainModel.productURI | cleanURL}}/item/{{ data.product | cleanURL}}">
     <div class="thumb">
-        <a class="thumbnail" href="#/sale/{{MainModel.saleType}}/product/{{MainModel.productURI | cleanURL}}/item/{{ data.product | cleanURL}}">
+        <div class="thumbnail" ng-class="MainModel.thumbnailAccent()">
             <img src="{{data.image_urls.300x400[0].url}}" img-fade-in/>
-        </a>
+        </div>
         <legend>
             <img src="assets/img/gradient.png" class="gradient">
             <h5>{{data.name}}</h5>
         </legend>
     </div>
     <div class="extruder-wrap">
-        <div class="extruder"></div>
+        <div class="extruder" ng-class="MainModel.extruderAccent()"></div>
     </div>
+    </a>
 </li>

@@ -23,11 +23,19 @@ services.factory('MainModel', function ($http, $log, $rootScope, $routeParams, $
     };
 
     mainModel.isNavActive = function (value){
-        return (value === mainModel.saleType)? 'navActive' : '';
+        return (value === mainModel.saleType)? 'nav-active' : '';
     }
 
     mainModel.isEdgeActive = function (value){
-        return (value === mainModel.saleType)? 'edgeActive' : '';
+        return (value === mainModel.saleType)? 'edge-active' : '';
+    }
+
+    mainModel.extruderAccent = function(){
+        return 'extruder-' + mainModel.saleType;
+    }
+
+    mainModel.thumbnailAccent = function(){
+        return 'thumbnail-' + mainModel.saleType;
     }
 
     return mainModel;

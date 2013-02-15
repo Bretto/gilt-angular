@@ -29,11 +29,6 @@ h1 {
   margin-left: -16px;
 }
 
-/* line 38, ../sass/base.scss */
-.thumbnail:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 /* line 92, ../sass/base.scss */
 .arrow-right-w {
   position: absolute;

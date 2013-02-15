@@ -402,17 +402,32 @@ directives.directive('testView', function ($http, $templateCache, $route, $ancho
     };
 });
 
-directives.directive('heroShot', function ($log, $parse) {
+directives.directive('productHeroShot', function ($log, $parse, MainModel) {
 
     function link(scope, elem, attr, ctrl) {
-
+        scope.MainModel = MainModel;
     }
 
     return {
         replace:true,
         scope:{data:"="},
         restrict:'E',
-        templateUrl:'partial/hero-shot.html',
+        templateUrl:'partial/product-hero-shot.html',
+        link:link
+    }
+});
+
+directives.directive('saleHeroShot', function ($log, $parse, MainModel) {
+
+    function link(scope, elem, attr, ctrl) {
+        scope.MainModel = MainModel;
+    }
+
+    return {
+        replace:true,
+        scope:{data:"="},
+        restrict:'E',
+        templateUrl:'partial/sale-hero-shot.html',
         link:link
     }
 });
@@ -424,14 +439,13 @@ directives.directive('isMouseOver', function ($log, $parse) {
         var target = $(attr.isMouseOver)[0];
 
         $(target).mouseover(function (event) {
-            elem.addClass('edgeOver');
+            elem.addClass('edge-over');
         });
 
         $(target).mouseleave(function (event) {
-            elem.removeClass('edgeOver');
+            elem.removeClass('edge-over');
         });
     }
-
 
     return {
 

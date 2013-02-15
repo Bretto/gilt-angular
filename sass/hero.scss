@@ -1,5 +1,29 @@
 #hero-shot{
 
+  .hero-wrap{
+    &:hover{
+      .extruder-wrap {
+        .extruder-women{
+          background-color: $c1 !important;
+        }
+        .extruder-men{
+          background-color: $c2 !important;
+        }
+        .extruder-kids{
+          background-color: $c3 !important;
+        }
+        .extruder-home{
+          background-color: $c4 !important;
+        }
+      }
+    }
+
+  }
+
+  a{
+    text-decoration: none ;
+  }
+
   header{
 
     img{
@@ -18,7 +42,8 @@
         font-size: 30px;
         line-height: 37px;
         margin: 0;
-      }
+        color: #ffffff;
+        }
 
       position: relative;
       background-color: #000000;
