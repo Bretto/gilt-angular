@@ -48,11 +48,19 @@ directives.directive('imgFadeIn', function ($log, $parse, $timeout) {
 
     function link(scope, element, attr, ctrl) {
 
-        element.load(function () {
-            $log.info('load')
-            //$(this).fadeTo(500,1);
-            TweenMax.fromTo(element, 1, {opacity:0, rotationY:getRandom(360, -360), rotationX:getRandom(360, -360), z:getRandom(0, -1000), ease:Power2.easeOut},
+        // hack to determine if an obj is visible or not
+        scope.$watch(function(){return element.prop('offsetHeight')}, function(value) {
+
+            $(element).css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)');
+
+            TweenMax.fromTo(element, 1, { opacity:0, rotationY:getRandom(360, -360), rotationX:getRandom(360, -360), z: -1000, ease:Power2.easeOut},
                 {opacity:1, rotationY:0, rotationX:0, z:0, ease:Power2.easeOut})
+        });
+
+        element.load(function () {
+
+//            TweenMax.fromTo(element, 1, {opacity:.5, rotationY:getRandom(360, -360), rotationX:getRandom(360, -360), z:getRandom(0, -1000), ease:Power2.easeOut},
+//                {opacity:1, rotationY:0, rotationX:0, z:0, ease:Power2.easeOut})
         });
     }
 
@@ -272,20 +280,19 @@ directives.directive('productThumb', function ($log, $parse, $http, GILT) {
 
     function link(scope, elem, attr, ctrl) {
 
-        var productUrl = scope.item + GILT.APIKEY + GILT.CALLBACK;
-
-        $http({method:GILT.METHOD, url:productUrl}).success(success).error(error);
-
-        function success(data, status) {
-            scope.status = status;
-            scope.data = data;
-            //$log.info(data);
-        }
-
-        function error(data, status) {
-            scope.data = data || "Request failed";
-            scope.status = status;
-        }
+//        var productUrl = scope.item + GILT.APIKEY + GILT.CALLBACK;
+//
+//
+//        $http({method:GILT.METHOD, url:productUrl}).success(success).error(error);
+//
+//        function success(data, status) {
+//            scope.productData = data;
+//            //$log.info(data);
+//        }
+//
+//        function error(data, status) {
+//            scope.productData = data || "Request failed";
+//        }
     }
 
     return {
@@ -449,6 +456,65 @@ directives.directive('isMouseOver', function ($log, $parse) {
 
     return {
 
+        restrict:'A',
+        link:link
+    }
+});
+
+directives.directive('textFx', function ($log, $parse, $timeout) {
+
+    function link(scope, elem, attr, ctrl) {
+
+        var possible = "abcdef ghijklm nopqrst uvwxyz";
+        var dataLink = elem.text().replace(/[{}]/g, "");
+        var origin = eval('scope.' + dataLink);
+
+        if (origin && origin.length > 0) {
+
+            elem.text('');
+            while (elem.text().length !== origin.length) {
+                elem.text(elem.text() + '-');
+            }
+
+            scrambleLoop(origin);
+        }
+
+        function scrambleLoop(origin) {
+            for (var i = 0; i < origin.length; i++) {
+                (function (index) {
+                    $timeout(function () {
+                        scramble(index, 0)
+                    }, 20 * index);
+                }(i));
+            }
+        }
+
+
+        function scramble(index, cnt) {
+
+            if (cnt !== 10) {
+                cnt++
+                var str = setCharAt(elem.text(), index, possible.charAt(Math.floor(Math.random() * possible.length)));
+                elem.text(str);
+                $timeout(function () {
+                    scramble(index, cnt);
+                }, 10);
+            } else {
+                str = setCharAt(elem.text(), index, origin[index]);
+                elem.text(str);
+            }
+        }
+
+
+    }
+
+    function setCharAt(str, index, chr) {
+        if (index > str.length - 1) return str;
+        return str.substr(0, index) + chr + str.substr(index + 1);
+    }
+
+
+    return {
         restrict:'A',
         link:link
     }

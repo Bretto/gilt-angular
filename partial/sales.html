@@ -1,7 +1,7 @@
 <div id="sales">
     <sale-hero-shot data="item"></sale-hero-shot>
-    <section set-height-from="sales-list" ng-cloak>
-        <ul id="sales-list" class="thumbnails">
+    <section set-height-from="sales-list">
+        <ul id="sales-list" ng-class="MainModel.listLayout()">
             <li ng-repeat="s in data.sales">
                 <sale-thumb></sale-thumb>
             </li>

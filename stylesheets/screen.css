@@ -29,7 +29,12 @@ h1 {
   margin-left: -16px;
 }
 
-/* line 92, ../sass/base.scss */
+/* line 38, ../sass/base.scss */
+.push-right {
+  float: right !important;
+}
+
+/* line 91, ../sass/base.scss */
 .arrow-right-w {
   position: absolute;
   width: 0;
@@ -39,7 +44,7 @@ h1 {
   border-left: 20px solid #ffffff;
 }
 
-/* line 101, ../sass/base.scss */
+/* line 100, ../sass/base.scss */
 .arrow-left-w {
   position: absolute;
   width: 0;
@@ -49,7 +54,7 @@ h1 {
   border-right: 20px solid #ffffff;
 }
 
-/* line 110, ../sass/base.scss */
+/* line 109, ../sass/base.scss */
 .arrow-right-b {
   position: absolute;
   width: 0;
@@ -59,7 +64,7 @@ h1 {
   border-left: 20px solid #1C1D22;
 }
 
-/* line 119, ../sass/base.scss */
+/* line 118, ../sass/base.scss */
 .arrow-left-b {
   position: absolute;
   width: 0;
@@ -80,10 +85,15 @@ h1 {
   height: 184px;
 }
 /* line 12, ../sass/sales.scss */
+#sales section .rows img {
+  width: 140px !important;
+  height: 130px !important;
+}
+/* line 20, ../sass/sales.scss */
 #sales #sales-list {
   padding: 0;
 }
-/* line 17, ../sass/sales.scss */
+/* line 25, ../sass/sales.scss */
 #sales #sales-list li {
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
@@ -96,7 +106,7 @@ h1 {
   -o-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%;
 }
-/* line 24, ../sass/sales.scss */
+/* line 32, ../sass/sales.scss */
 #sales .sale-popup {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -120,20 +130,20 @@ h1 {
   position: absolute;
   width: 370px;
 }
-/* line 38, ../sass/sales.scss */
+/* line 46, ../sass/sales.scss */
 #sales .sale-popup header {
   padding: 20px;
   background-color: #d96666;
 }
-/* line 42, ../sass/sales.scss */
+/* line 50, ../sass/sales.scss */
 #sales .sale-popup header span {
   color: #949494;
 }
-/* line 46, ../sass/sales.scss */
+/* line 54, ../sass/sales.scss */
 #sales .sale-popup header .timeago {
   color: #d2d2d2;
 }
-/* line 52, ../sass/sales.scss */
+/* line 60, ../sass/sales.scss */
 #sales .sale-popup section {
   padding: 20px;
   background-color: #ffffff;
@@ -146,6 +156,11 @@ h1 {
   height: 400px;
 }
 /* line 13, ../sass/products.scss */
+#products section .rows img {
+  width: 91px !important;
+  height: 121px !important;
+}
+/* line 21, ../sass/products.scss */
 #products .sold-out {
   padding-left: 20px;
 }
@@ -242,7 +257,7 @@ h1 {
 
 /* line 1, ../sass/nav.scss */
 #main-nav {
-  height: 176px;
+  height: 236px;
   background-color: #2a2d34;
   position: fixed;
   z-index: 1030;
@@ -256,18 +271,22 @@ h1 {
   max-width: 980px;
   margin: auto;
 }
-/* line 17, ../sass/nav.scss */
+/* line 16, ../sass/nav.scss */
+#main-nav .navbar .nav {
+  float: none;
+}
+/* line 21, ../sass/nav.scss */
 #main-nav .navbar hr {
   margin: 0 20px 10px;
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.29);
 }
-/* line 24, ../sass/nav.scss */
+/* line 28, ../sass/nav.scss */
 #main-nav .navbar-inner {
   border-radius: 0;
   height: 44px;
 }
-/* line 28, ../sass/nav.scss */
+/* line 32, ../sass/nav.scss */
 #main-nav .navbar-inner .container {
   padding-left: 20px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -278,25 +297,25 @@ h1 {
   left: 0;
   width: auto;
 }
-/* line 39, ../sass/nav.scss */
+/* line 43, ../sass/nav.scss */
 #main-nav .navbar-inner .brand {
   color: #fff;
   padding: 0 10px;
 }
-/* line 46, ../sass/nav.scss */
+/* line 50, ../sass/nav.scss */
 #main-nav .nav-lev2 {
   background-color: #d96666;
 }
-/* line 51, ../sass/nav.scss */
+/* line 55, ../sass/nav.scss */
 #main-nav .nav-btn {
   position: relative;
   height: 41px;
 }
-/* line 54, ../sass/nav.scss */
+/* line 58, ../sass/nav.scss */
 #main-nav .nav-btn a {
   color: #ffffff !important;
 }
-/* line 60, ../sass/nav.scss */
+/* line 64, ../sass/nav.scss */
 #main-nav .nav-btn span {
   position: absolute;
   margin: 2px;
@@ -306,7 +325,18 @@ h1 {
   left: 0;
   right: 0;
 }
-/* line 72, ../sass/nav.scss */
+/* line 76, ../sass/nav.scss */
+#main-nav .user {
+  margin-top: -2px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+}
+/* line 82, ../sass/nav.scss */
+#main-nav .user i {
+  margin-top: 6px;
+}
+/* line 88, ../sass/nav.scss */
 #main-nav .nav-btn-1 {
   background-color: #d96666;
 }
@@ -315,7 +345,7 @@ h1 {
   height: auto;
   bottom: 0;
 }
-/* line 76, ../sass/nav.scss */
+/* line 92, ../sass/nav.scss */
 #main-nav .nav-btn-2 {
   background-color: #d98032;
 }
@@ -324,7 +354,7 @@ h1 {
   height: auto;
   bottom: 0;
 }
-/* line 80, ../sass/nav.scss */
+/* line 96, ../sass/nav.scss */
 #main-nav .nav-btn-3 {
   background-color: #f2a950;
 }
@@ -333,7 +363,7 @@ h1 {
   height: auto;
   bottom: 0;
 }
-/* line 84, ../sass/nav.scss */
+/* line 100, ../sass/nav.scss */
 #main-nav .nav-btn-4 {
   background-color: #736c48;
 }
@@ -342,54 +372,82 @@ h1 {
   height: auto;
   bottom: 0;
 }
-/* line 89, ../sass/nav.scss */
+/* line 105, ../sass/nav.scss */
 #main-nav .nav-active span {
   height: auto;
   bottom: 0;
 }
-/* line 95, ../sass/nav.scss */
+/* line 111, ../sass/nav.scss */
 #main-nav .sub-menu {
   padding-left: 20px;
 }
-/* line 99, ../sass/nav.scss */
+/* line 114, ../sass/nav.scss */
+#main-nav .sub-menu li:first-child {
+  padding-right: 0;
+}
+/* line 120, ../sass/nav.scss */
+#main-nav .breadcrumb {
+  padding: 0px;
+  margin: 0 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 127, ../sass/nav.scss */
+#main-nav .breadcrumb a {
+  color: #999;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px -1px 0px;
+}
+/* line 129, ../sass/nav.scss */
+#main-nav .breadcrumb a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 138, ../sass/nav.scss */
+#main-nav .breadcrumb li:first-child {
+  padding-left: 20px !important;
+}
+/* line 142, ../sass/nav.scss */
+#main-nav .breadcrumb li {
+  padding: 10px 0px !important;
+}
+/* line 147, ../sass/nav.scss */
 #main-nav a {
   padding: 0;
 }
-/* line 103, ../sass/nav.scss */
+/* line 151, ../sass/nav.scss */
 #main-nav li {
   padding: 10px 20px;
 }
 
-/* line 109, ../sass/nav.scss */
+/* line 157, ../sass/nav.scss */
 .edge-1 {
   background-color: #d96666;
   opacity: 0;
 }
 
-/* line 113, ../sass/nav.scss */
+/* line 161, ../sass/nav.scss */
 .edge-2 {
   background-color: #d98032;
   opacity: 0;
 }
 
-/* line 117, ../sass/nav.scss */
+/* line 165, ../sass/nav.scss */
 .edge-3 {
   background-color: #f2a950;
   opacity: 0;
 }
 
-/* line 121, ../sass/nav.scss */
+/* line 169, ../sass/nav.scss */
 .edge-4 {
   background-color: #736c48;
   opacity: 0;
 }
 
-/* line 125, ../sass/nav.scss */
+/* line 173, ../sass/nav.scss */
 .edge-over {
   opacity: 1;
 }
 
-/* line 129, ../sass/nav.scss */
+/* line 177, ../sass/nav.scss */
 .edge-active {
   opacity: 1;
 }
@@ -397,7 +455,7 @@ h1 {
 /* line 10, ../sass/screen.scss */
 .main-content {
   color: #eeeeee;
-  margin-top: 200px;
+  margin-top: 240px;
   position: relative;
   width: 980px;
 }
@@ -417,50 +475,54 @@ footer {
   position: absolute;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
+.thumb-wrap a {
+  color: #ffffff;
+}
+/* line 44, ../sass/screen.scss */
 .thumb-wrap:hover .thumb .thumbnail-women {
   border-color: #d96666;
 }
-/* line 44, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .thumb-wrap:hover .thumb .thumbnail-men {
   border-color: #d98032;
 }
-/* line 48, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .thumb-wrap:hover .thumb .thumbnail-kids {
   border-color: #f2a950;
 }
-/* line 52, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .thumb-wrap:hover .thumb .thumbnail-home {
   border-color: #736c48;
 }
-/* line 56, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .thumb-wrap:hover .thumb legend {
   display: block;
   bottom: -1px;
 }
-/* line 63, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .thumb-wrap:hover .extruder-wrap .extruder-women {
   background-color: #d96666 !important;
 }
-/* line 66, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .thumb-wrap:hover .extruder-wrap .extruder-men {
   background-color: #d98032 !important;
 }
-/* line 69, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .thumb-wrap:hover .extruder-wrap .extruder-kids {
   background-color: #f2a950 !important;
 }
-/* line 72, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .thumb-wrap:hover .extruder-wrap .extruder-home {
   background-color: #736c48 !important;
 }
-/* line 78, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .thumb-wrap .thumb {
   margin: .5px;
   overflow: hidden;
   position: relative;
 }
-/* line 84, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .thumb-wrap .thumb legend {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -482,7 +544,7 @@ footer {
   bottom: -55px;
   position: absolute;
 }
-/* line 96, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .thumb-wrap .thumb legend h5 {
   position: absolute;
   top: 5px;
@@ -496,14 +558,14 @@ footer {
   margin-left: 10px;
   padding-right: 20px;
 }
-/* line 111, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .thumb-wrap .thumb legend .gradient {
   opacity: 1;
   width: 100% !important;
   height: 50px !important;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .extruder-wrap {
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
@@ -517,7 +579,7 @@ footer {
   perspective-origin: 50% 50%;
   padding-bottom: 1px;
 }
-/* line 127, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .extruder-wrap .extruder {
   background-color: #595D62;
   height: 40px;
@@ -532,8 +594,57 @@ footer {
   -o-transform-origin: 0 0 0 0 50%;
   transform-origin: 0 0 0 0 50%;
 }
-/* line 133, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .extruder-wrap .extruder .navbar-inner {
   background: none;
   margin-left: 22px;
+}
+
+/* line 151, ../sass/screen.scss */
+.rows {
+  margin: 0 20px !important;
+}
+/* line 155, ../sass/screen.scss */
+.rows li {
+  float: none;
+  list-style: none;
+}
+/* line 160, ../sass/screen.scss */
+.rows li:nth-child(odd) {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+/* line 167, ../sass/screen.scss */
+.rows li .thumb-listing-holder {
+  border-radius: 4px;
+  padding: 10px 20px !important;
+}
+/* line 177, ../sass/screen.scss */
+.rows li:hover .thumb-listing .extruder-women {
+  background-color: #d96666 !important;
+}
+/* line 180, ../sass/screen.scss */
+.rows li:hover .thumb-listing .extruder-men {
+  background-color: #d98032 !important;
+}
+/* line 183, ../sass/screen.scss */
+.rows li:hover .thumb-listing .extruder-kids {
+  background-color: #f2a950 !important;
+}
+/* line 186, ../sass/screen.scss */
+.rows li:hover .thumb-listing .extruder-home {
+  background-color: #736c48 !important;
+}
+/* line 194, ../sass/screen.scss */
+.rows li a {
+  color: #ffffff;
+}
+/* line 198, ../sass/screen.scss */
+.rows li h2 {
+  font-size: 25px;
+  font-weight: 200;
+  padding: 30px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+  max-width: 790px;
 }

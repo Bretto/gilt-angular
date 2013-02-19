@@ -36,14 +36,20 @@
         </div>
         <div class="sub-menu">
             <ul class="nav">
-                <li><a class="brand">Brett Coffin</a></li>
-                <li><a>Shopping Cart</a></li>
-                <li><a>Grid</a></li>
-                <li><a>List</a></li>
+                <li><a class="user"><i class="icon-user icon-white"></i> Brett Coffin</a></li>
+                <li><a><i class="icon-shopping-cart icon-white"></i> Shopping Cart</a></li>
+                <li class="push-right"><a ng-click="onGrid()"><i class="icon-th icon-white"></i> Grid</a></li>
+                <li class="push-right"><a ng-click="onList()"><i class="icon-th-list icon-white "></i> List</a></li>
+                <div class="clearfix"></div>
             </ul>
-            <div class="clearfix"></div>
+
         </div>
         <hr>
+            <ul class="breadcrumb">
+                <li><a href="#/sale/{{MainModel.root}}">{{MainModel.rootCrumb}}</a></li>
+                <li><a href="#/sale/{{MainModel.root}}/product/{{MainModel.productURI | cleanURL}}">{{MainModel.productCrumb}}</a></li>
+                <li><a href="#/sale/{{MainModel.root}}/product/{{MainModel.productURI | cleanURL}}/item/{{ MainModel.productID | cleanURL}}">{{MainModel.itemCrumb}}</a></li>
+            </ul>
+            <div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
 </div>

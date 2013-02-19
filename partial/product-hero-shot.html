@@ -1,6 +1,6 @@
 <div id="hero-shot">
         <header>
-            <img src="{{data.image_urls.744x281[0].url}}" class="pull-right"
+            <img ng-src="{{data.image_urls.744x281[0].url}}" class="pull-right"
                  img-fade-in/>
             <div class="dates begins">
                 <!--<p>Begins:</p>-->
@@ -18,7 +18,7 @@
         </div>
 
     <article>
-        <h1>{{data.name}}</h1>
+        <h1 >{{data.name}}</h1>
         <p>{{data.description}}</p>
         <p ng-show="isSoldOut">SOLD OUT</p>
     </article>

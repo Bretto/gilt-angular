@@ -7,25 +7,48 @@ controllers.controller('MainCtrl', function ($scope, $timeout, $log){
     $log.info('MainCtrl');
 });
 
-controllers.controller('MainNavCtrl', function ($scope, $timeout, MainModel, $log){
+controllers.controller('MainContentCtrl', function ($scope, $rootScope, $timeout, $compile, $log){
+    $log.info('MainContentCtrl');
+});
+
+controllers.controller('MainNavCtrl', function ($scope, $timeout, MainModel, $routeParams, $log){
     $log.info('MainNavCtrl');
     $scope.MainModel = MainModel;
+    MainModel.root = $routeParams.type;
+    MainModel.productURI = $routeParams.uri;
+    MainModel.productID = $routeParams.id;
+
+    $scope.onGrid = function(){
+        $log.info('onGrid', MainModel.isGrid);
+        MainModel.isGrid = true;
+    }
+
+    $scope.onList = function(){
+        MainModel.isGrid = false;
+    }
 
 });
 
-controllers.controller('MainContentCtrl', function ($scope, $rootScope, $timeout, $compile, $log){
-    $log.info('MainContentCtrl');
+controllers.controller('WelcomeCtrl', function ($scope, MainModel, $log, $http, $routeParams, GILT, $timeout){
+    $log.info('HomeCtrl');
+
+    $scope.MainModel = MainModel;
+    MainModel.root = 'welcome';
+
+    MainModel.breadcrumbs(MainModel.root);
 });
 
 controllers.controller('SalesCtrl', function ($scope, MainModel, $log, $http, $routeParams, GILT, $timeout, promiseData){
     $log.info('SalesCtrl');
 
     $scope.MainModel = MainModel;
-    MainModel.saleType = $routeParams.type;
+    MainModel.root = $routeParams.type;
 
     $scope.data = promiseData.data;
     $scope.item = promiseData.item;
 
+
+    MainModel.breadcrumbs(MainModel.root + ' sales');
 
 //    $timeout(function () {
 //        $('.thumb-wrap').removeClass('init-thumb');
@@ -38,11 +61,14 @@ controllers.controller('ProductsCtrl', function ($scope, $log, $routeParams, GIL
     $log.info('ProductsCtrl');
 
     $scope.MainModel = MainModel;
-    MainModel.saleType = $routeParams.type;
+    MainModel.root = $routeParams.type;
     MainModel.productURI = $routeParams.uri;
 
     $scope.data = promiseData.data;
-    $scope.isSoldOut = (promiseData.data.products) ? false : true;
+    $scope.products = promiseData.products;
+    $scope.isSoldOut = (promiseData.products) ? false : true;
+
+    MainModel.breadcrumbs(MainModel.root + ' sales', promiseData.data.name );
 
 });
 
@@ -50,12 +76,14 @@ controllers.controller('ProductCtrl', function ($scope, $log, $routeParams, GILT
     $log.info('ProductCtrl');
 
     $scope.MainModel = MainModel;
-    MainModel.saleType = $routeParams.type;
+    MainModel.root = $routeParams.type;
     MainModel.productURI = $routeParams.uri;
     MainModel.productID = $routeParams.id;
 
     $scope.data = promiseData.data;
     $scope.item = promiseData.item;
+
+    MainModel.breadcrumbs(MainModel.root + ' sales', promiseData.data.name, promiseData.item.name );
 
 });
 

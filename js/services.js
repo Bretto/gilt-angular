@@ -16,26 +16,49 @@ services.constant('GILT', {
 
 services.factory('MainModel', function ($http, $log, $rootScope, $routeParams, $location) {
 
+    function capitaliseFirstLetter(string)
+    {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+
     var mainModel = {
-         saleType: ''
+         root: ''
         ,productURI: ''
         ,productID: ''
+        ,rootCrumb: ''
+        ,productCrumb: ''
+        ,itemCrumb: ''
+        ,isGrid: true
+
     };
 
+    mainModel.breadcrumbs = function (rootCrumb, productCrumb,itemCrumb ){
+
+        mainModel.rootCrumb = capitaliseFirstLetter(rootCrumb) + ' /';
+        mainModel.productCrumb = (productCrumb)?  productCrumb + ' /' : '';
+        mainModel.itemCrumb = itemCrumb;
+
+    }
+
+    mainModel.listLayout = function (){
+        return (mainModel.isGrid)? 'thumbnails' : 'rows';
+    }
+
     mainModel.isNavActive = function (value){
-        return (value === mainModel.saleType)? 'nav-active' : '';
+        return (value === mainModel.root)? 'nav-active' : '';
     }
 
     mainModel.isEdgeActive = function (value){
-        return (value === mainModel.saleType)? 'edge-active' : '';
+        return (value === mainModel.root)? 'edge-active' : '';
     }
 
     mainModel.extruderAccent = function(){
-        return 'extruder-' + mainModel.saleType;
+        return 'extruder-' + mainModel.root;
     }
 
     mainModel.thumbnailAccent = function(){
-        return 'thumbnail-' + mainModel.saleType;
+        return 'thumbnail-' + mainModel.root;
     }
 
     return mainModel;

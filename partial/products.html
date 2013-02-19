@@ -4,8 +4,8 @@
 
     <h4 class="sold-out" ng-show="isSoldOut">SOLD OUT</h4>
     <section set-height-from="products-height-target">
-        <ul class="thumbnails" id="products-height-target">
-            <product-thumb ng-repeat="item in data.products | limitTo:9"></product-thumb>
+        <ul ng-class="MainModel.listLayout()" id="products-height-target">
+            <product-thumb ng-repeat="product in products | limitTo:9"></product-thumb>
         </ul>
     </section>
 

@@ -4,6 +4,11 @@
   height: 400px;
 }
 /* line 13, ../sass/products.scss */
+#products section .rows img {
+  width: 91px !important;
+  height: 121px !important;
+}
+/* line 21, ../sass/products.scss */
 #products .sold-out {
-  padding-left: 20;
+  padding-left: 20px;
 }

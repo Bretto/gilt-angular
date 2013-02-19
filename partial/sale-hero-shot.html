@@ -1,8 +1,8 @@
 <div id="hero-shot">
-    <a href="#/sale/{{MainModel.saleType}}/product/{{data.sale | cleanURL}}">
+    <a href="#/sale/{{MainModel.root}}/product/{{data.sale | cleanURL}}">
         <div class="hero-wrap">
             <header>
-                <img src="{{data.image_urls.744x281[0].url}}" class="pull-right"
+                <img ng-src="{{data.image_urls.744x281[0].url}}" class="pull-right"
                      img-fade-in/>
 
                 <div class="dates begins">
@@ -25,6 +25,6 @@
         <h1>{{data.name}}</h1>
 
         <p>{{data.description}}</p>
-        <a href="#/sale/{{MainModel.saleType}}/product/{{data.sale | cleanURL}}" class="btn btn-inverse">View</a>
+        <a href="#/sale/{{MainModel.root}}/product/{{data.sale | cleanURL}}" class="btn btn-inverse">View</a>
     </article>
 </div>

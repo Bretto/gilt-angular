@@ -10,7 +10,7 @@
 .main-content {
   //background-color: $c2;
   color: rgb(238, 238, 238);
-  margin-top: 200px;
+  margin-top: 240px;
   //min-height: 800px !important;
   position: relative;
   width: 980px;
@@ -32,6 +32,10 @@ footer {
 
 
 .thumb-wrap {
+
+  a{
+    color: #ffffff;
+  }
 
   &:hover {
 
@@ -137,6 +141,76 @@ footer {
   }
 }
 
+//.thumb-listing:nth-child(odd){
+//  h3{
+//    color: #ff0000;
+//
+//  }
+//}
+
+.rows{
+
+  margin: 0 20px !important;
+
+  li{
+    float: none;
+    list-style: none;
+
+
+    &:nth-child(odd){
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+
+    }
+
+    .thumb-listing-holder{
+      border-radius: 4px;
+      padding: 10px 20px !important;
+
+
+    }
+
+    &:hover{
+
+      .thumb-listing{
+        .extruder-women{
+          background-color: $c1 !important;
+        }
+        .extruder-men{
+          background-color: $c2 !important;
+        }
+        .extruder-kids{
+          background-color: $c3 !important;
+        }
+        .extruder-home{
+          background-color: $c4 !important;
+        }
+      }
+
+    }
+
+
+    a{
+      color: #ffffff;
+    }
+
+    h2 {
+
+      font-size: 25px;
+      font-weight: 200;
+      padding: 30px;
+      text-shadow: 0 0 3px rgba(0, 0, 0, .75);
+      max-width: 790px;
+    }
+
+    //img{
+    //  width: 91px !important;
+    //  height: 121px !important;
+    //
+    //}
+  }
+}
 
 
 
