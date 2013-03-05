@@ -15,7 +15,7 @@ html, body {
 img {
   opacity: 0;
   border: null;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: white;
 }
 
 /* line 29, ../sass/base.scss */
@@ -34,7 +34,20 @@ h1 {
   float: right !important;
 }
 
-/* line 91, ../sass/base.scss */
+/* line 43, ../sass/base.scss */
+.finger {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-color: #2d6987;
+  border: 1px solid #ffffff;
+  opacity: .5;
+  z-index: 9999;
+}
+
+/* line 104, ../sass/base.scss */
 .arrow-right-w {
   position: absolute;
   width: 0;
@@ -44,7 +57,7 @@ h1 {
   border-left: 20px solid #ffffff;
 }
 
-/* line 100, ../sass/base.scss */
+/* line 113, ../sass/base.scss */
 .arrow-left-w {
   position: absolute;
   width: 0;
@@ -54,7 +67,7 @@ h1 {
   border-right: 20px solid #ffffff;
 }
 
-/* line 109, ../sass/base.scss */
+/* line 122, ../sass/base.scss */
 .arrow-right-b {
   position: absolute;
   width: 0;
@@ -64,7 +77,7 @@ h1 {
   border-left: 20px solid #1C1D22;
 }
 
-/* line 118, ../sass/base.scss */
+/* line 131, ../sass/base.scss */
 .arrow-left-b {
   position: absolute;
   width: 0;

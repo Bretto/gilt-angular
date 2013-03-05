@@ -51,10 +51,13 @@ directives.directive('imgFadeIn', function ($log, $parse, $timeout) {
         // hack to determine if an obj is visible or not
         scope.$watch(function(){return element.prop('offsetHeight')}, function(value) {
 
-            $(element).css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)');
+            if(element){
+                $(element).css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)');
 
-            TweenMax.fromTo(element, 1, { opacity:0, rotationY:getRandom(360, -360), rotationX:getRandom(360, -360), z: -1000, ease:Power2.easeOut},
-                {opacity:1, rotationY:0, rotationX:0, z:0, ease:Power2.easeOut})
+                TweenMax.fromTo(element, 1, { opacity:0, rotationY:getRandom(360, -360), rotationX:getRandom(360, -360), z: -1000, ease:Power2.easeOut},
+                    {opacity:1, rotationY:0, rotationX:0, z:0, ease:Power2.easeOut})
+            }
+
         });
 
         element.load(function () {
@@ -519,3 +522,4 @@ directives.directive('textFx', function ($log, $parse, $timeout) {
         link:link
     }
 });
+

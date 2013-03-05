@@ -23,7 +23,7 @@ html, body{
 img{
   opacity: 0;
   border: null;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 h1{
@@ -40,7 +40,20 @@ h1{
 }
 
 
+.finger {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-color: #2d6987;
+  border: 1px solid #ffffff;
+  opacity: .5;
+  z-index: 9999;
 
+  //margin-top: -20px;
+  //margin-left: -20px;
+}
 
 
 //.thumbnails{

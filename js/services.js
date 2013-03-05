@@ -64,5 +64,3 @@ services.factory('MainModel', function ($http, $log, $rootScope, $routeParams, $
     return mainModel;
 });
 
-
-

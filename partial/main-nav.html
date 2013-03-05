@@ -38,8 +38,8 @@
             <ul class="nav">
                 <li><a class="user"><i class="icon-user icon-white"></i> Brett Coffin</a></li>
                 <li><a><i class="icon-shopping-cart icon-white"></i> Shopping Cart</a></li>
-                <li class="push-right"><a ng-click="onGrid()"><i class="icon-th icon-white"></i> Grid</a></li>
-                <li class="push-right"><a ng-click="onList()"><i class="icon-th-list icon-white "></i> List</a></li>
+                <li class="push-right" ng-hide="MainModel.isGrid"><a ng-click="onGrid()"><i class="icon-th icon-white"></i> Grid</a></li>
+                <li class="push-right" ng-show="MainModel.isGrid"><a ng-click="onList()"><i class="icon-th-list icon-white "></i> List</a></li>
                 <div class="clearfix"></div>
             </ul>
 
